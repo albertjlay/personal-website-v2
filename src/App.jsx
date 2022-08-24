@@ -1,7 +1,7 @@
 import React from 'react';
 import { LightTheme } from './Themes';
-import Nav from './components/Nav';
-import Home from './components/Home';
+import Nav from './components/sections/Nav';
+import Home from './components/sections/Home';
 import './style.scss';
 import { ThemeProvider } from '@emotion/react';
 

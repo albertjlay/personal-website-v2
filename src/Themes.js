@@ -19,7 +19,7 @@ export const LightTheme = createTheme({
   typography: {
     fontFamily: '"Oswald", sans-serif',
     h1: {
-      fontWeight: 500,
+      fontWeight: 600,
     },
     h2: {
       fontWeight: 500,

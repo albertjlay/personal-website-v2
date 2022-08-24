@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Box, Button } from '@mui/material';
-import logo from '../assets/logo.png';
-import Socials from './Socials';
+import logo from '../../assets/logo.png';
+import Socials from '../Socials';
 
 const sections = ['about', 'experiences', 'projects', 'resume'];
 
