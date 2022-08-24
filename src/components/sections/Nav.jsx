@@ -7,7 +7,7 @@ const sections = ['about', 'experiences', 'projects', 'resume'];
 
 const NavBar = () => {
   return (
-    <AppBar position='block' color='transparent' sx={{ boxShadow: 'none' }}>
+    <AppBar position='relative' color='transparent' sx={{ boxShadow: 'none' }}>
       <Toolbar>
         <img src={logo} alt="Albert Lay's personal logo" className='logo' sx={{ flexGrow: 1 }} />
         <Box sx={{ flexGrow: 1 }}>
