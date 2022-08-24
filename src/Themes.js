@@ -22,10 +22,14 @@ export const LightTheme = createTheme({
       fontWeight: 600,
     },
     h2: {
-      fontWeight: 500,
+      fontWeight: 600,
     },
     subtitle1: {
       fontSize: '1.2rem',
+      fontWeight: 300,
+    },
+    body1: {
+      fontWeight: 300,
     },
     button: {
       fontWeight: 300,

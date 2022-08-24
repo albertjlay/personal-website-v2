@@ -4,6 +4,7 @@ import Nav from './components/sections/Nav';
 import Home from './components/sections/Home';
 import './style.scss';
 import { ThemeProvider } from '@emotion/react';
+import About from './components/sections/About';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className='App'>
         <Nav />
         <Home />
+        <About />
       </div>
     </ThemeProvider>
   );
