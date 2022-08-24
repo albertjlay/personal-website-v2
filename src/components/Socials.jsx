@@ -16,14 +16,19 @@ const socialOptions = [
   { name: 'Instagram', url: 'https://www.instagram.com/albertjlay/', icon: InstagramIcon },
 ];
 
-const Socials = () => {
+const Socials = props => {
+  const { sx } = props;
   return (
-    <Box>
+    <Box sx={sx}>
       {socialOptions.map(s => {
         const Icon = s.icon;
         return (
-          <Button key={s.name} sx={{ color: '#fff' }} href={s.url}>
-            <Icon />
+          <Button
+            key={s.name}
+            sx={{ color: '#000', '&:hover': { backgroundColor: 'transparent' } }}
+            href={s.url}
+          >
+            <Icon sx={{ color: '#000' }} />
           </Button>
         );
       })}
