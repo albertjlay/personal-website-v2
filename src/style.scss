@@ -58,6 +58,50 @@ section {
     }
     &.bottom-wave {
       margin-top: -100px;
+      background-color: #fbf9f9;
+    }
+  }
+}
+
+.experience {
+  background-color: #fbf9f9;
+  margin-top: -10px;
+
+  .experience-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    h3 {
+      font-size: 2.3rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+    .experience-tab {
+      text-align: left;
+      .experience-header {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 15%;
+          margin-right: 5%;
+        }
+      }
+
+      .experience-tools {
+        display: flex;
+        p {
+          margin: 1rem 3rem 1rem 0;
+        }
+      }
+
+      .experience-body {
+        list-style-type: '\2728';
+        padding-left: 1rem;
+      }
     }
   }
 }
