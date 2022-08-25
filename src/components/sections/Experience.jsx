@@ -18,6 +18,8 @@ const experienceContent = [
     tools: ['Go', 'Vue', 'GCP', 'Docker', 'Kubernetes'],
     body: ['lorem', 'lorem', 'lorem3'],
     quote: 'lorem',
+    quoteWriterName: 'Stephen Smart',
+    quoteWriterPosition: 'Engineering Team Lead',
   },
   {
     name: 'Imagine Communications',
@@ -29,6 +31,8 @@ const experienceContent = [
     tools: ['C#', 'TypeScript', '.NET', 'Vue', 'PostgreSQL'],
     body: ['lorem', 'lorem', 'lorem3'],
     quote: 'lorem',
+    quoteWriterName: 'Kristopher Griffin',
+    quoteWriterPosition: 'Full Stack Developer',
   },
   {
     name: 'International Hub',
@@ -72,10 +76,10 @@ const Experience = () => {
             ))}
           </TabList>
           {experienceContent.map((ec, idx) => (
-            <TabPanel key={ec.name} value={ec.name} index={idx}>
-              <div>
+            <TabPanel key={ec.name} value={ec.name} index={idx} className='experience-tab'>
+              <div className='experience-header'>
                 <img src={ec.logo} alt={`${ec.name}'s logo.`} />
-                <div>
+                <div className='experience-header-text'>
                   <Typography variant='h3'>
                     {ec.role} @ {ec.name}
                   </Typography>
@@ -86,19 +90,26 @@ const Experience = () => {
                   </Typography>
                 </div>
               </div>
-              <div>
+              <div className='experience-tools'>
                 {ec.tools.map(t => (
                   <Typography variant='body1'>{t}</Typography>
                 ))}
               </div>
-              <ul>
+              <ul className='experience-body'>
                 {ec.body.map(b => (
                   <li>
                     <Typography variant='body1'>{b}</Typography>
                   </li>
                 ))}
               </ul>
-              {ec.quote && <Typography variant='body1'>{ec.quote}</Typography>}
+              {ec.quote && (
+                <div className='experience-quote'>
+                  <Typography variant='body1'>{ec.quote}</Typography>
+                  <Typography variant='body1'>
+                    {ec.quoteWriterName}, {ec.quoteWriterPosition}
+                  </Typography>
+                </div>
+              )}
             </TabPanel>
           ))}
         </TabContext>
