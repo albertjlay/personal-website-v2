@@ -6,6 +6,7 @@ import imagineLogo from '../../assets/experiences/imagine-communications.png';
 import ihLogo from '../../assets/experiences/international-hub.png';
 import mathsocLogo from '../../assets/experiences/mathsoc.png';
 import { Container } from '@mui/system';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const experienceContent = [
   {
@@ -22,10 +23,11 @@ const experienceContent = [
       'Reengineered a core feature from a monolithic PHP codebase into a modern Go microservice to tackle technical debt, increase test coverage, and improve code readability.',
     ],
     quote:
-      'Albert has proven to be an outstanding co-op. He showed initiative at every step of the way, constantly seeking to learn new technologies that would help both Searchspring and his future career. He actively built relationships with many other employees and proved to be an extremely effective collaborator. He did not hesitate to ask questions and offer feedback on how he could best be utilized during his time at Searchspring. We thank Albert for his many contributions to Searchspring and wish him all the best in the future!',
+      'Albert has proven to be an outstanding co-op. He showed initiative at every step of the way, constantly seeking to learn new technologies that would help both Searchspring and his future career. He actively built relationships with many other employees and proved to be an extremely effective collaborator. He did not hesitate to ask questions and offer feedback on how he could best be utilized during his time at Searchspring.',
     quoteWriterName: 'Stephen Smart',
     quoteWriterPosition: 'Engineering Team Lead',
-    color: '#432FC7',
+    color: '#4b3ce1',
+    emojiClass: 'purple-heart',
   },
   {
     name: 'Imagine Communications',
@@ -41,10 +43,11 @@ const experienceContent = [
       "Implemented default configurations that mirror legacy behaviours to minimize disruptions to customers' workflows when upgrading to the new GA.",
     ],
     quote:
-      "Albert has been an integral member of the team this term.His work on a number of time sensitive and critical tasks have been both instrumental to the success of the team's goals, and reflect a level of work closer to that of a full time- rather than just a coop. With his driven and positive attitude, coupled with his eagerness to learn, Albert was a pleasure to work with this term. Great work!",
+      "Albert has been an integral member of the team this term. His work on a number of time sensitive and critical tasks have been both instrumental to the success of the team's goals, and reflect a level of work closer to that of a full time- rather than just a coop. With his driven and positive attitude, coupled with his eagerness to learn, Albert was a pleasure to work with this term. Great work!",
     quoteWriterName: 'Kristopher Griffin',
     quoteWriterPosition: 'Full Stack Developer',
     color: '#012B58',
+    emojiClass: 'earth',
   },
   {
     name: 'International Hub',
@@ -59,6 +62,7 @@ const experienceContent = [
       'Transformed design mocks into a fully functional SPA using a modular component architecture',
     ],
     color: '#BA78D7',
+    emojiClass: 'octopus',
   },
   {
     name: 'UW MathSoc',
@@ -73,8 +77,16 @@ const experienceContent = [
       'Updated website with events targeted to 8,000+ students in the Faculty of Mathematics.',
     ],
     color: '#C50078',
+    emojiClass: 'cherry-blossom',
   },
 ];
+
+// https://stackoverflow.com/questions/50890241/programmatically-add-opacity-to-a-color-in-typescript
+function addAlpha(color, opacity) {
+  // coerce values so ti is between 0 and 1.
+  const _opacity = Math.round(Math.min(Math.max(opacity || 1, 0), 1) * 255);
+  return color + _opacity.toString(16).toUpperCase();
+}
 
 const Experience = () => {
   const [viewedExp, setViewedExp] = React.useState(experienceContent[0].name);
@@ -86,6 +98,21 @@ const Experience = () => {
   };
   return (
     <section className='experience'>
+      <svg
+        className='background'
+        id='visual'
+        viewBox='0 0 900 475'
+        xmlns='http://www.w3.org/2000/svg'
+        version='1.1'
+      >
+        <rect x='0' y='0' width='900' height='675' fill='#fbf9f9'></rect>
+        <g fill={addAlpha(viewedExpColor, 0.2)}>
+          <circle r='156' cx='-50' cy='166'></circle>
+          {/* <circle r='69' cx='867' cy='55'></circle> */}
+          <circle r='88' cx='879' cy='154'></circle>
+          <circle r='147' cx='887' cy='411'></circle>
+        </g>
+      </svg>
       <Typography variant='h2'>Where have I been?</Typography>
       <Typography variant='subtitle1'>
         Places where I tried my absolute best to build features without breaking things.
@@ -126,20 +153,23 @@ const Experience = () => {
               </div>
               <div className='experience-tools'>
                 {ec.tools.map(t => (
-                  <Typography variant='body1'>{t}</Typography>
+                  <Typography key={t} variant='body1'>
+                    {t}
+                  </Typography>
                 ))}
               </div>
-              <ul className='experience-body'>
+              <ul className={`experience-body ${ec.emojiClass}`}>
                 {ec.body.map(b => (
-                  <li>
+                  <li key={b}>
                     <Typography variant='body1'>{b}</Typography>
                   </li>
                 ))}
               </ul>
               {ec.quote && (
                 <div className='experience-quote'>
+                  <FormatQuoteIcon />
                   <Typography variant='body1'>{ec.quote}</Typography>
-                  <Typography variant='body1'>
+                  <Typography className='quote-author' variant='body2'>
                     {ec.quoteWriterName}, {ec.quoteWriterPosition}
                   </Typography>
                 </div>

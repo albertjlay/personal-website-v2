@@ -64,8 +64,16 @@ section {
 }
 
 .experience {
-  background-color: #fbf9f9;
   margin-top: -10px;
+  position: relative;
+
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+  }
 
   .experience-tabs {
     display: flex;
@@ -99,8 +107,35 @@ section {
       }
 
       .experience-body {
-        list-style-type: '\2728';
         padding-left: 1rem;
+
+        li {
+          padding-left: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        &.purple-heart {
+          list-style-type: '\01f49c';
+        }
+        &.earth {
+          list-style-type: '\1f30e';
+        }
+        &.octopus {
+          list-style-type: '\1F984';
+        }
+        &.cherry-blossom {
+          list-style-type: '\1F338';
+        }
+      }
+
+      .experience-quote {
+        text-align: center;
+
+        .quote-author {
+          margin-top: 0.5rem;
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
       }
     }
   }

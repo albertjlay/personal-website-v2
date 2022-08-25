@@ -92,7 +92,7 @@ const About = () => {
         <Typography variant='subtitle1'>and for the slightly braggy part...</Typography>
         <Container className='badges'>
           {badges.map(b => (
-            <a href={b.url} target='blank' rel='noreferrer noopenner'>
+            <a key={b.url} href={b.url} target='blank' rel='noreferrer noopenner'>
               <img src={b.image} alt={b.alt} />
             </a>
           ))}
