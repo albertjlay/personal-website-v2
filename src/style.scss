@@ -159,6 +159,19 @@ section {
   }
 }
 
+section.call-to-action {
+  display: flex;
+  align-items: center;
+  padding: 5vh 10vw;
+  background-color: #e3e4e0;
+  text-align: left;
+
+  img {
+    width: 200px;
+    margin: 0 100px;
+  }
+}
+
 footer {
   display: flex;
   padding: 0 10vw;
