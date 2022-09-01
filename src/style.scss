@@ -158,3 +158,12 @@ section {
     }
   }
 }
+
+footer {
+  display: flex;
+  padding: 0 10vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  background-color: #fbf9f9;
+}
