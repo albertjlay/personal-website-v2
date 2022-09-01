@@ -6,6 +6,7 @@ import './style.scss';
 import { ThemeProvider } from '@emotion/react';
 import About from './components/sections/About';
 import Experience from './components/sections/Experience';
+import Projects from './components/sections/Projects';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Home />
         <About />
         <Experience />
+        <Projects />
       </div>
     </ThemeProvider>
   );
