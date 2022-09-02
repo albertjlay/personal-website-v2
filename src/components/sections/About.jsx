@@ -10,19 +10,19 @@ import cpBadge from '../../assets/cp-badge.png';
 const aboutContent = [
   {
     header: 'I code.',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum quos mollitia qui. Excepturi magnam quia dolore alias neque eaque, non suscipit sed accusantium. Accusamus provident amet vitae. Impedit, eum?',
+    body: "I believe in the power of quality code, thorough documentation, and rigorous testing. With these pillars as my foundation, I have built modular, component-based frontend softwares with React, Vue, and TypeScript. I also have experience designing robust backend systems using Go, C#, and .NET. Furthermore, I'm always looking to learn new technologies!",
     image: laptopMemoji,
     alt: 'Memoji of me working on my laptop.',
   },
   {
     header: 'I (try) to have fun!',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum quos mollitia qui. Excepturi magnam quia dolore alias neque eaque, non suscipit sed accusantium. Accusamus provident amet vitae. Impedit, eum?',
+    body: 'While I *love* my work, it is not my life. Work-life balance is extremely important to me. On my free time, I scour the city for good food, enjoy long chats with good buddies, and lose in both League & Smash. I also love trying out new activities! Some of my newly discovered hobbies include skiing, boxing, and blogging.',
     image: partyMemoji,
     alt: 'Memoji of me partying.',
   },
   {
     header: "I'm not sure really...",
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum quos mollitia qui. Excepturi magnam quia dolore alias neque eaque, non suscipit sed accusantium. Accusamus provident amet vitae. Impedit, eum?',
+    body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, data science, and product management.",
     image: shrugMemoji,
     alt: 'Memoji of me shrugging.',
   },
@@ -69,7 +69,7 @@ const About = () => {
   return (
     <section className='about'>
       <WaveTop />
-      <div className='about-body'>
+      <div className='about-body' id='about'>
         <Typography variant='h2'>Who Am I?</Typography>
         <Typography variant='subtitle1'>
           That's a multi-hour conversation, but here's the gist.
