@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, CardMedia, Typography, Paper } from '@mui/material';
+import { Typography, Paper } from '@mui/material';
 import React from 'react';
 import cc3kImage from '../../assets/projects/cc3k.webp';
 import covidWatchdogImage from '../../assets/projects/covid-watchdog.webp';
@@ -8,7 +8,6 @@ import pokedexImage from '../../assets/projects/pokedex.webp';
 import statsMadeEasyImage from '../../assets/projects/statsmadeeasy.webp';
 import tracenextImage from '../../assets/projects/tracenext.webp';
 import tictactoeImage from '../../assets/projects/tic-tac-toe.webp';
-import { display } from '@mui/system';
 
 const Projects = () => {
   return (
@@ -26,19 +25,33 @@ const Projects = () => {
                 width: '250px',
                 height: '400px',
                 borderRadius: '5px',
-                backgroundImage: `url(${item.img})`,
+                backdropFilter: 'blur(10px)',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 margin: '10px',
+                background: 'rgba(255, 255, 255, .15)',
+                transition: 'all 300ms ease-in',
 
-                '&:hover': {
-                  backgroundColor: '#ffc152',
-                  backgroundImage: 'none',
+                '&:before': {
+                  content: "''",
+                  position: 'absolute',
+                  left: 0,
+                  top: 0,
+                  width: '100%',
+                  height: '100%',
+                  backgroundImage: `url(${item.img})`,
+                  opacity: 0,
+                  zIndex: 1,
+                  transition: 'opacity 300ms ease-in',
+                },
+                '&:hover:before': {
+                  opacity: 1,
                 },
               }}
             >
               <Typography
+                className='project-circle'
                 sx={{
                   backgroundColor: '#fbf9f9',
                   borderRadius: '50%',
@@ -48,6 +61,7 @@ const Projects = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   fontSize: '20px',
+                  zIndex: 2,
                 }}
                 variant='h4'
               >
@@ -55,35 +69,8 @@ const Projects = () => {
               </Typography>
             </Paper>
           </a>
-          // <Card sx={{ display: 'flex', textAlign: 'left' }}>
-          //   <CardMedia sx={{ width: '300px' }} component='img' alt={item.title} image={item.img} />
-          //   <CardContent>
-          //     <Typography gutterBottom variant='h4' component='div'>
-          //       Lizard
-          //     </Typography>
-          //     <Typography variant='body2' color='text.secondary'>
-          //       Lizards are a widespread group of squamate reptiles, with over 6,000 species,
-          //       ranging across all continents except Antarctica
-          //     </Typography>
-          //     <CardActions>
-          //       <a>Hi</a>
-          //     </CardActions>
-          //   </CardContent>
-          // </Card>
         ))}
       </div>
-
-      {/* <ImageList cols={3} rowHeight={350}>
-        {projectData.map(item => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-              alt={item.title}
-              loading='lazy'
-            />
-          </ImageListItem>
-        ))}
-      </ImageList> */}
     </section>
   );
 };
