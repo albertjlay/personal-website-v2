@@ -13,7 +13,7 @@ const socialOptions = [
   },
   { name: 'GitHub', url: 'https://github.com/albertjlay/', icon: GitHubIcon },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/albertjlay/', icon: LinkedInIcon },
-  { name: 'Instagram', url: 'https://www.instagram.com/albertjlay/', icon: InstagramIcon },
+  // { name: 'Instagram', url: 'https://www.instagram.com/albertjlay/', icon: InstagramIcon },
 ];
 
 const Socials = props => {
@@ -23,13 +23,14 @@ const Socials = props => {
       {socialOptions.map(s => {
         const Icon = s.icon;
         return (
-          <Button
-            key={s.name}
-            sx={{ color: '#000', '&:hover': { backgroundColor: 'transparent' } }}
-            href={s.url}
-          >
-            <Icon sx={{ color: '#000' }} />
-          </Button>
+          <a href={s.url} target='_blank' rel='noreferrer'>
+            <Button
+              key={s.name}
+              sx={{ color: '#000', '&:hover': { backgroundColor: 'transparent' } }}
+            >
+              <Icon sx={{ color: '#000' }} />
+            </Button>
+          </a>
         );
       })}
     </Box>
