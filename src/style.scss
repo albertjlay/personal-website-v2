@@ -2,6 +2,10 @@
   width: 150px;
 }
 
+a {
+  text-decoration: none; /* no underline */
+}
+
 main {
   display: flex;
   justify-content: space-around;
@@ -150,9 +154,6 @@ section {
   background-size: cover;
 
   .project-cards {
-    a {
-      text-decoration: none; /* no underline */
-    }
     .project-card {
       display: inline-block;
     }

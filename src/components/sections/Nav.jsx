@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import Socials from '../Socials';
 import { Link } from 'react-scroll';
 
-const sections = ['about', 'experiences', 'projects', 'resume'];
+const sections = ['about', 'experiences', 'projects'];
 
 const NavBar = () => {
   return (

@@ -22,7 +22,9 @@ const Home = () => {
           >
             say hi!
           </PillButton>
-          <PillButton>resume</PillButton>
+          <PillButton href='https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/resume-albert-lay.pdf'>
+            resume
+          </PillButton>
         </div>
       </div>
       <img src={HiMemoji} alt='Memoji of me saying hi!' />

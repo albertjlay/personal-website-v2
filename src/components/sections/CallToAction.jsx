@@ -20,7 +20,13 @@ const CallToAction = () => {
         >
           email
         </PillButton>
-        <PillButton borderColor='white'>resume</PillButton>
+        <a
+          href='https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/resume-albert-lay.pdf '
+          target='_blank'
+          rel='noreferrer'
+        >
+          <PillButton borderColor='white'>resume</PillButton>
+        </a>
       </div>
     </section>
   );
