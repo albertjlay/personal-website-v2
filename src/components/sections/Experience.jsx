@@ -105,7 +105,6 @@ const Experience = () => {
         xmlns='http://www.w3.org/2000/svg'
         version='1.1'
       >
-        <rect x='0' y='0' width='900' height='675' fill='#fbf9f9'></rect>
         <g fill={addAlpha(viewedExpColor, 0.2)}>
           <circle r='156' cx='-50' cy='166'></circle>
           {/* <circle r='69' cx='867' cy='55'></circle> */}

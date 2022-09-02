@@ -23,7 +23,7 @@ const Projects = () => {
             <Paper
               sx={{
                 width: '250px',
-                height: '400px',
+                height: '300px',
                 borderRadius: '5px',
                 backdropFilter: 'blur(10px)',
                 display: 'flex',
@@ -31,7 +31,10 @@ const Projects = () => {
                 alignItems: 'center',
                 margin: '10px',
                 background: 'rgba(255, 255, 255, .15)',
-                transition: 'all 300ms ease-in',
+
+                '&:hover .project-circle': {
+                  backgroundColor: '#fbf9f9',
+                },
 
                 '&:before': {
                   content: "''",
@@ -53,11 +56,11 @@ const Projects = () => {
               <Typography
                 className='project-circle'
                 sx={{
-                  backgroundColor: '#fbf9f9',
                   borderRadius: '50%',
                   width: '200px',
                   height: '200px',
                   display: 'flex',
+                  flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                   fontSize: '20px',
@@ -113,7 +116,7 @@ const projectData = [
   },
   {
     img: nggImage,
-    title: 'Number Guessing Game',
+    title: 'NGG',
     url: 'https://github.com/albertjlay/NGG',
   },
 ];
