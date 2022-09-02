@@ -97,7 +97,7 @@ const Experience = () => {
     setViewedExpColor(experienceContent[experienceContent.findIndex(e => e.name === newExp)].color);
   };
   return (
-    <section className='experience'>
+    <section className='experience' id='experiences'>
       <svg
         className='background'
         id='visual'
@@ -110,7 +110,7 @@ const Experience = () => {
           <circle r='156' cx='-50' cy='166'></circle>
           {/* <circle r='69' cx='867' cy='55'></circle> */}
           <circle r='88' cx='879' cy='154'></circle>
-          <circle r='147' cx='887' cy='411'></circle>
+          <circle r='147' cx='887' cy='321'></circle>
         </g>
       </svg>
       <Typography variant='h2'>Where have I been?</Typography>

@@ -12,7 +12,7 @@ import { display } from '@mui/system';
 
 const Projects = () => {
   return (
-    <section className='projects'>
+    <section className='projects' id='projects'>
       <Typography variant='h2'>What have I been up to?</Typography>
       <Typography variant='subtitle1'>
         Stuffs I built when I was frantically looking for my first job, extremely bored, or in the
