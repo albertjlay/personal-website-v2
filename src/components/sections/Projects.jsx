@@ -79,11 +79,11 @@ const Projects = () => {
 };
 
 const projectData = [
-  {
-    img: cc3kImage,
-    title: 'CC3K',
-    url: '',
-  },
+  // {
+  //   img: cc3kImage,
+  //   title: 'CC3K',
+  //   url: '',
+  // },
   {
     img: covidWatchdogImage,
     title: 'Covid Watchdog',
@@ -97,7 +97,7 @@ const projectData = [
   {
     img: personalWebsiteImage,
     title: 'Personal Website',
-    url: '',
+    url: 'https://github.com/albertjlay/albert-lay',
   },
   {
     img: pokedexImage,
@@ -107,7 +107,7 @@ const projectData = [
   {
     img: tracenextImage,
     title: 'TraceNext',
-    url: '',
+    url: 'https://github.com/levinaind/TO-Hacks-2021',
   },
   {
     img: statsMadeEasyImage,
