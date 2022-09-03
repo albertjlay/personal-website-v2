@@ -1,13 +1,13 @@
 import { Typography, Paper } from '@mui/material';
 import React from 'react';
-import cc3kImage from '../../assets/projects/cc3k.webp';
-import covidWatchdogImage from '../../assets/projects/covid-watchdog.webp';
-import nggImage from '../../assets/projects/ngg.webp';
-import personalWebsiteImage from '../../assets/projects/personal-website.webp';
-import pokedexImage from '../../assets/projects/pokedex.webp';
-import statsMadeEasyImage from '../../assets/projects/statsmadeeasy.webp';
-import tracenextImage from '../../assets/projects/tracenext.webp';
-import tictactoeImage from '../../assets/projects/tic-tac-toe.webp';
+import cc3kImage from '../../assets/projects/cc3k.png';
+import covidWatchdogImage from '../../assets/projects/covid-watchdog.png';
+import nggImage from '../../assets/projects/ngg.png';
+import personalWebsiteImage from '../../assets/projects/personal-website.png';
+import pokedexImage from '../../assets/projects/pokedex.png';
+import statsMadeEasyImage from '../../assets/projects/statsmadeeasy.png';
+import tracenextImage from '../../assets/projects/tracenext.png';
+import tictactoeImage from '../../assets/projects/tic-tac-toe.png';
 
 const Projects = () => {
   return (
