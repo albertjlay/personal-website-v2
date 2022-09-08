@@ -162,7 +162,7 @@ const Experience = () => {
               </div>
               <div className='experience-tools'>
                 {ec.tools.map(t => (
-                  <Typography className='experience-tool' variant='body1'>
+                  <Typography key={t} className='experience-tool' variant='body1'>
                     {t}
                   </Typography>
                 ))}

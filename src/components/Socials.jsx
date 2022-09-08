@@ -29,7 +29,7 @@ const Socials = props => {
         const Icon = s.icon;
 
         return (
-          <a href={s.url} target='_blank' rel='noreferrer'>
+          <a key={s.name} href={s.url} target='_blank' rel='noreferrer'>
             <Button
               key={s.name}
               sx={{ color: '#000', '&:hover': { backgroundColor: 'transparent' } }}

@@ -19,7 +19,13 @@ const Projects = () => {
       </Typography>
       <div className='project-cards'>
         {projectData.map(item => (
-          <a className='project-card' href={item.url} target='_blank' rel='noreferrer'>
+          <a
+            key={item.title}
+            className='project-card'
+            href={item.url}
+            target='_blank'
+            rel='noreferrer'
+          >
             <Paper
               sx={{
                 width: '250px',
