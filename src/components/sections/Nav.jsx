@@ -3,10 +3,13 @@ import { AppBar, Toolbar, Box, Button } from '@mui/material';
 import logo from '../../assets/logo.png';
 import Socials from '../Socials';
 import { Link } from 'react-scroll';
+import useWindowDimensions from '../../helpers/window-dimensions';
 
 const sections = ['about', 'experiences', 'projects'];
 
 const NavBar = () => {
+  const { width } = useWindowDimensions();
+  if (width <= 900) return;
   return (
     <AppBar position='relative' color='transparent' sx={{ boxShadow: 'none' }}>
       <Toolbar>

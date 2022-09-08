@@ -14,7 +14,7 @@ main {
   margin-top: 10vh;
 
   .intro {
-    width: 35rem;
+    max-width: 35rem;
     margin-right: 150px;
 
     .name {
@@ -24,6 +24,31 @@ main {
 
   img {
     width: 300px;
+  }
+
+  .call-to-action {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+
+    .intro {
+      margin: auto;
+    }
+
+    img {
+      width: 30vw;
+      margin-top: 50px;
+    }
+
+    .call-to-action {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
   }
 }
 
@@ -58,11 +83,21 @@ section {
     z-index: -1;
     position: relative;
     &.top-wave {
-      margin-bottom: -5px;
+      margin-bottom: -1vw;
     }
     &.bottom-wave {
-      margin-top: -100px;
+      margin-top: -1vw;
       background-color: #fbf9f9;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .about-body {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+        margin: 2em 0;
+      }
     }
   }
 }
@@ -70,16 +105,15 @@ section {
 .experience {
   margin-top: -10px;
   position: relative;
-  height: 100vh;
-  background-color: #fbf9f9;
 
   .background {
     position: absolute;
     left: 0;
     top: 0;
-
-    // height: 100vh;
     width: 100vw;
+    background-color: #fbf9f9;
+    z-index: -1;
+    height: 100%;
   }
 
   .experience-tabs {
@@ -87,7 +121,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45rem;
+    max-width: 45rem;
     h3 {
       font-size: 2.3rem;
     }
@@ -107,9 +141,13 @@ section {
       }
 
       .experience-tools {
-        display: flex;
-        p {
-          margin: 1rem 3rem 1rem 0;
+        max-width: 100vw;
+        margin: 1rem 0;
+        overflow-wrap: break-word;
+        .experience-tool {
+          display: inline-block;
+          margin-right: 3rem;
+          margin-bottom: 0.5rem;
         }
       }
 
@@ -146,13 +184,27 @@ section {
       }
     }
   }
+
+  @media (max-width: 900px) {
+    .experience-tabs {
+      .experience-tab {
+        .experience-header {
+          flex-direction: column;
+          text-align: center;
+        }
+        .experience-tools {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 .projects {
   padding: 10vh 5vw;
   background-image: url(./assets/projects-background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
   .project-cards {
     .project-card {
@@ -171,6 +223,26 @@ section.call-to-action {
   img {
     width: 200px;
     margin: 0 100px;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      width: 30vw;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
   }
 }
 

@@ -104,6 +104,7 @@ const Experience = () => {
         viewBox='0 0 900 475'
         xmlns='http://www.w3.org/2000/svg'
         version='1.1'
+        preserveAspectRatio='xMaxYMid'
       >
         <g fill={addAlpha(viewedExpColor, 0.2)}>
           <circle r='156' cx='-50' cy='166'></circle>
@@ -123,20 +124,29 @@ const Experience = () => {
             onChange={changeViewedExp}
             className='experience-tab-list'
             variant='scrollable'
-            scrollButtons={false}
-            sx={{ '& .MuiTabs-indicator': { backgroundColor: viewedExpColor } }}
+            sx={{ '& .MuiTabs-indicator': { backgroundColor: viewedExpColor }, width: '100%' }}
           >
             {experienceContent.map(ec => (
               <Tab
                 value={ec.name}
                 key={ec.name}
                 label={ec.name}
-                sx={{ '&.Mui-selected': { fontWeight: 500, color: '#000' } }}
+                sx={{
+                  '&.Mui-selected': { fontWeight: 500, color: '#000' },
+                }}
               />
             ))}
           </TabList>
           {experienceContent.map((ec, idx) => (
-            <TabPanel key={ec.name} value={ec.name} index={idx} className='experience-tab'>
+            <TabPanel
+              key={ec.name}
+              value={ec.name}
+              index={idx}
+              className='experience-tab'
+              sx={{
+                maxWidth: '100vw',
+              }}
+            >
               <div className='experience-header'>
                 <img src={ec.logo} alt={`${ec.name}'s logo.`} />
                 <div className='experience-header-text'>
@@ -152,7 +162,7 @@ const Experience = () => {
               </div>
               <div className='experience-tools'>
                 {ec.tools.map(t => (
-                  <Typography key={t} variant='body1'>
+                  <Typography className='experience-tool' variant='body1'>
                     {t}
                   </Typography>
                 ))}

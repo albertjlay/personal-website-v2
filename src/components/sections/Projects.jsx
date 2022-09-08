@@ -51,6 +51,9 @@ const Projects = () => {
                 '&:hover:before': {
                   opacity: 1,
                 },
+                '@media(max-width: 900px)': {
+                  width: '70vw',
+                },
               }}
             >
               <Typography

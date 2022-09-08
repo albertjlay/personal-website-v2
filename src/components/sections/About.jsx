@@ -6,6 +6,7 @@ import shrugMemoji from '../../assets/memojis/shrug.png';
 import partyMemoji from '../../assets/memojis/party.png';
 import saBadge from '../../assets/sa-badge.png';
 import cpBadge from '../../assets/cp-badge.png';
+import useWindowDimensions from '../../helpers/window-dimensions';
 
 const aboutContent = [
   {
@@ -66,6 +67,7 @@ const WaveBottom = () => (
 );
 
 const About = () => {
+  const { width } = useWindowDimensions();
   return (
     <section className='about'>
       <WaveTop />
@@ -82,10 +84,11 @@ const About = () => {
             </Container>
           );
           const Image = () => <img src={content.image} alt={content.alt} />;
+
           return (
             <Container key={content.header} className='about-content'>
-              {idx % 2 ? <Text /> : <Image />}
-              {idx % 2 ? <Image /> : <Text />}
+              {idx % 2 && width > 900 ? <Text /> : <Image />}
+              {idx % 2 && width > 900 ? <Image /> : <Text />}
             </Container>
           );
         })}
