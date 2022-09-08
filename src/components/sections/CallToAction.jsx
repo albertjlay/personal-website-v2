@@ -21,7 +21,7 @@ const CallToAction = () => {
             email
           </PillButton>
           <a
-            href='https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/resume-albert-lay.pdf '
+            href='https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/albert-lay-resume-f22.pdf'
             target='_blank'
             rel='noreferrer'
           >

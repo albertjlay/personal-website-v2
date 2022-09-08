@@ -19,9 +19,13 @@ const Home = () => {
           <PillButton href="mailto:albertjlay@gmail.com?subject=Hi%2C%20let's%20work%20together!&body=Tell%20me%20what's%20the%20email%20about%20and%20I'll%20get%20back%20to%20you%20as%20soon%20as%20possible.%0D%0A%0D%0AIn%20the%20meantime%2C%20have%20a%20nice%20day!">
             say hi!
           </PillButton>
-          <PillButton href='https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/resume-albert-lay.pdf'>
-            resume
-          </PillButton>
+          <a
+            href='https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/albert-lay-resume-f22.pdf'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <PillButton>resume</PillButton>
+          </a>
         </div>
       </div>
       <img src={HiMemoji} alt='Memoji of me saying hi!' />
