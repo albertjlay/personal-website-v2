@@ -76,6 +76,11 @@ const Projects = () => {
                     alignItems: 'center',
                     fontSize: '20px',
                     zIndex: 2,
+
+                    '@media(max-width: 900px)': {
+                      height: '100px',
+                      margin: '15px 0',
+                    },
                   }}
                   variant='h4'
                 >
