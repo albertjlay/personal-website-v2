@@ -219,13 +219,14 @@ section {
 .projects {
   padding: 10vh 5vw;
   background-image: url(./assets/projects-background.svg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
 
   .project-cards {
     .project-card {
       display: inline-block;
     }
+  }
+  @media (max-width: 900px) {
+    padding: 5vh 5vw;
   }
 }
 
