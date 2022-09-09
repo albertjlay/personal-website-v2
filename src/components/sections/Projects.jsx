@@ -33,10 +33,6 @@ const Projects = () => {
                   margin: '10px',
                   background: 'rgba(255, 255, 255, .15)',
 
-                  '&:hover .project-circle': {
-                    backgroundColor: '#fbf9f9',
-                  },
-
                   '&:before': {
                     content: "''",
                     position: 'absolute',
@@ -49,11 +45,18 @@ const Projects = () => {
                     zIndex: 1,
                     transition: 'opacity 300ms ease-in',
                   },
-                  '&:hover:before': {
-                    opacity: 1,
-                  },
                   '@media(max-width: 900px)': {
-                    width: '70vw',
+                    width: '70%',
+                    height: '70%',
+                    padding: '1em',
+                  },
+                  '@media (hover: hover) and (pointer: fine)': {
+                    '&:hover .project-circle': {
+                      backgroundColor: '#fbf9f9',
+                    },
+                    '&:hover:before': {
+                      opacity: 1,
+                    },
                   },
                 }}
               >
