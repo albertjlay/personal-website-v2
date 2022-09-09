@@ -4,6 +4,7 @@ import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Container } from '@mui/system';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import { experienceContent } from '../../content';
+import { Fade } from 'react-awesome-reveal';
 
 // https://stackoverflow.com/questions/50890241/programmatically-add-opacity-to-a-color-in-typescript
 function addAlpha(color, opacity) {
@@ -37,80 +38,83 @@ const Experience = () => {
           <circle r='147' cx='887' cy='321'></circle>
         </g>
       </svg>
-      <Typography variant='h2'>Where have I been?</Typography>
-      <Typography variant='subtitle1'>
-        Places where I tried my absolute best to build features without breaking things.
-      </Typography>
-      <Container className='experience-tabs'>
-        <TabContext value={viewedExp}>
-          <TabList
-            value={viewedExp}
-            onChange={changeViewedExp}
-            className='experience-tab-list'
-            variant='scrollable'
-            sx={{ '& .MuiTabs-indicator': { backgroundColor: viewedExpColor }, width: '100%' }}
-          >
-            {experienceContent.map(ec => (
-              <Tab
-                value={ec.name}
-                key={ec.name}
-                label={ec.name}
-                sx={{
-                  '&.Mui-selected': { fontWeight: 500, color: '#000' },
-                }}
-              />
-            ))}
-          </TabList>
-          {experienceContent.map((ec, idx) => (
-            <TabPanel
-              key={ec.name}
-              value={ec.name}
-              index={idx}
-              className='experience-tab'
-              sx={{
-                maxWidth: '100vw',
-              }}
+      <Fade>
+        <Typography variant='h2'>Where have I been?</Typography>
+        <Typography variant='subtitle1'>
+          Places where I tried my absolute best to build features without breaking things.
+        </Typography>
+        <Container className='experience-tabs'>
+          <TabContext value={viewedExp}>
+            <TabList
+              value={viewedExp}
+              onChange={changeViewedExp}
+              className='experience-tab-list'
+              variant='scrollable'
+              sx={{ '& .MuiTabs-indicator': { backgroundColor: viewedExpColor }, width: '100%' }}
             >
-              <div className='experience-header'>
-                <img src={ec.logo} alt={`${ec.name}'s logo.`} />
-                <div className='experience-header-text'>
-                  <Typography variant='h3' sx={{ fontWeight: 300 }}>
-                    {ec.role} <span style={{ color: ec.color, fontWeight: 500 }}>@ {ec.name}</span>
-                  </Typography>
-                  <Typography variant='h4'>
-                    {ec.location} (
-                    {ec.startDate.toLocaleString('default', { month: 'short', year: 'numeric' })} -{' '}
-                    {ec.endDate.toLocaleString('default', { month: 'short', year: 'numeric' })})
-                  </Typography>
+              {experienceContent.map(ec => (
+                <Tab
+                  value={ec.name}
+                  key={ec.name}
+                  label={ec.name}
+                  sx={{
+                    '&.Mui-selected': { fontWeight: 500, color: '#000' },
+                  }}
+                />
+              ))}
+            </TabList>
+            {experienceContent.map((ec, idx) => (
+              <TabPanel
+                key={ec.name}
+                value={ec.name}
+                index={idx}
+                className='experience-tab'
+                sx={{
+                  maxWidth: '100vw',
+                }}
+              >
+                <div className='experience-header'>
+                  <img src={ec.logo} alt={`${ec.name}'s logo.`} />
+                  <div className='experience-header-text'>
+                    <Typography variant='h3' sx={{ fontWeight: 300 }}>
+                      {ec.role}{' '}
+                      <span style={{ color: ec.color, fontWeight: 500 }}>@ {ec.name}</span>
+                    </Typography>
+                    <Typography variant='h4'>
+                      {ec.location} (
+                      {ec.startDate.toLocaleString('default', { month: 'short', year: 'numeric' })}{' '}
+                      - {ec.endDate.toLocaleString('default', { month: 'short', year: 'numeric' })})
+                    </Typography>
+                  </div>
                 </div>
-              </div>
-              <div className='experience-tools'>
-                {ec.tools.map(t => (
-                  <Typography key={t} className='experience-tool' variant='body1'>
-                    {t}
-                  </Typography>
-                ))}
-              </div>
-              <ul className={`experience-body ${ec.emojiClass}`}>
-                {ec.body.map(b => (
-                  <li key={b}>
-                    <Typography variant='body1'>{b}</Typography>
-                  </li>
-                ))}
-              </ul>
-              {ec.quote && (
-                <div className='experience-quote'>
-                  <FormatQuoteIcon />
-                  <Typography variant='body1'>{ec.quote}</Typography>
-                  <Typography className='quote-author' variant='body2'>
-                    {ec.quoteWriterName}, {ec.quoteWriterPosition}
-                  </Typography>
+                <div className='experience-tools'>
+                  {ec.tools.map(t => (
+                    <Typography key={t} className='experience-tool' variant='body1'>
+                      {t}
+                    </Typography>
+                  ))}
                 </div>
-              )}
-            </TabPanel>
-          ))}
-        </TabContext>
-      </Container>
+                <ul className={`experience-body ${ec.emojiClass}`}>
+                  {ec.body.map(b => (
+                    <li key={b}>
+                      <Typography variant='body1'>{b}</Typography>
+                    </li>
+                  ))}
+                </ul>
+                {ec.quote && (
+                  <div className='experience-quote'>
+                    <FormatQuoteIcon />
+                    <Typography variant='body1'>{ec.quote}</Typography>
+                    <Typography className='quote-author' variant='body2'>
+                      {ec.quoteWriterName}, {ec.quoteWriterPosition}
+                    </Typography>
+                  </div>
+                )}
+              </TabPanel>
+            ))}
+          </TabContext>
+        </Container>
+      </Fade>
     </section>
   );
 };

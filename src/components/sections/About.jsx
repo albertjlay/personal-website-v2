@@ -3,6 +3,7 @@ import { Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import useWindowDimensions from '../../helpers/window-dimensions';
 import { aboutContent, badgesContent } from '../../content';
+import { AttentionSeeker, Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 
 const WaveTop = () => (
   <svg className='top-wave' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -34,10 +35,12 @@ const About = () => {
     <section className='about'>
       <WaveTop />
       <div className='about-body' id='about'>
-        <Typography variant='h2'>Who Am I?</Typography>
-        <Typography variant='subtitle1'>
-          That's a multi-hour conversation, but here's the gist.
-        </Typography>
+        <Fade>
+          <Typography variant='h2'>Who Am I?</Typography>
+          <Typography variant='subtitle1'>
+            That's a multi-hour conversation, but here's the gist.
+          </Typography>
+        </Fade>
         {aboutContent.map((content, idx) => {
           const Text = () => (
             <Container>
@@ -47,21 +50,26 @@ const About = () => {
           );
           const Image = () => <img src={content.image} alt={content.alt} />;
 
+          const slideDirection = width <= 900 ? 'up' : idx % 2 ? 'right' : 'left';
           return (
-            <Container key={content.header} className='about-content'>
-              {idx % 2 && width > 900 ? <Text /> : <Image />}
-              {idx % 2 && width > 900 ? <Image /> : <Text />}
-            </Container>
+            <Slide direction={slideDirection}>
+              <Container key={content.header} className='about-content'>
+                {idx % 2 && width > 900 ? <Text /> : <Image />}
+                {idx % 2 && width > 900 ? <Image /> : <Text />}
+              </Container>
+            </Slide>
           );
         })}
         <Typography variant='subtitle1'>and for the slightly braggy part...</Typography>
-        <Container className='badges'>
-          {badgesContent.map(b => (
-            <a key={b.url} href={b.url} target='blank' rel='noreferrer noopenner'>
-              <img src={b.image} alt={b.alt} />
-            </a>
-          ))}
-        </Container>
+        <AttentionSeeker effect='tada'>
+          <Container className='badges'>
+            {badgesContent.map(b => (
+              <a key={b.url} href={b.url} target='blank' rel='noreferrer noopenner'>
+                <img src={b.image} alt={b.alt} />
+              </a>
+            ))}
+          </Container>
+        </AttentionSeeker>
       </div>
       <WaveBottom />
     </section>
