@@ -1,33 +1,10 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 import { Container } from '@mui/system';
-import laptopMemoji from '../../assets/memojis/laptop.png';
-import shrugMemoji from '../../assets/memojis/shrug.png';
-import partyMemoji from '../../assets/memojis/party.png';
 import saBadge from '../../assets/sa-badge.png';
 import cpBadge from '../../assets/cp-badge.png';
 import useWindowDimensions from '../../helpers/window-dimensions';
-
-const aboutContent = [
-  {
-    header: 'I code.',
-    body: "I believe in the power of quality code, thorough documentation, and rigorous testing. With these pillars as my foundation, I have built modular, component-based frontend softwares with React, Vue, and TypeScript. I also have experience designing robust backend systems using Go, C#, and .NET. Furthermore, I'm always looking to learn new technologies!",
-    image: laptopMemoji,
-    alt: 'Memoji of me working on my laptop.',
-  },
-  {
-    header: 'I (try) to have fun!',
-    body: 'While I *love* my work, it is not my life. Work-life balance is extremely important to me. On my free time, I scour the city for good food, enjoy long chats with good buddies, and lose in both League & Smash. I also love trying out new activities! Some of my newly discovered hobbies include skiing, boxing, and blogging.',
-    image: partyMemoji,
-    alt: 'Memoji of me partying.',
-  },
-  {
-    header: "I'm not sure really...",
-    body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, data science, and product management.",
-    image: shrugMemoji,
-    alt: 'Memoji of me shrugging.',
-  },
-];
+import { aboutContent } from '../../content';
 
 const badges = [
   {

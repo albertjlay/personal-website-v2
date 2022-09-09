@@ -1,13 +1,6 @@
 import { Typography, Paper } from '@mui/material';
 import React from 'react';
-import cc3kImage from '../../assets/projects/cc3k.png';
-import covidWatchdogImage from '../../assets/projects/covid-watchdog.png';
-import nggImage from '../../assets/projects/ngg.png';
-import personalWebsiteImage from '../../assets/projects/personal-website.png';
-import pokedexImage from '../../assets/projects/pokedex.png';
-import statsMadeEasyImage from '../../assets/projects/statsmadeeasy.png';
-import tracenextImage from '../../assets/projects/tracenext.png';
-import tictactoeImage from '../../assets/projects/tic-tac-toe.png';
+import { projectContent } from '../../content';
 
 const Projects = () => {
   return (
@@ -18,7 +11,7 @@ const Projects = () => {
         rare cases where I'm feeling particularly inspired.
       </Typography>
       <div className='project-cards'>
-        {projectData.map(item => (
+        {projectContent.map(item => (
           <a
             key={item.title}
             className='project-card'
@@ -86,48 +79,5 @@ const Projects = () => {
     </section>
   );
 };
-
-const projectData = [
-  // {
-  //   img: cc3kImage,
-  //   title: 'CC3K',
-  //   url: '',
-  // },
-  {
-    img: covidWatchdogImage,
-    title: 'Covid Watchdog',
-    url: 'https://github.com/jaredjhe/Covid-Watchdog',
-  },
-  {
-    img: tictactoeImage,
-    title: 'Tic Tac Toe',
-    url: 'https://github.com/albertjlay/tic-tac-toe',
-  },
-  {
-    img: personalWebsiteImage,
-    title: 'Personal Website',
-    url: 'https://github.com/albertjlay/albert-lay',
-  },
-  {
-    img: pokedexImage,
-    title: 'Pokedex',
-    url: 'https://github.com/albertjlay/pokedex',
-  },
-  {
-    img: tracenextImage,
-    title: 'TraceNext',
-    url: 'https://github.com/levinaind/TO-Hacks-2021',
-  },
-  {
-    img: statsMadeEasyImage,
-    title: 'Stats Made Easy',
-    url: 'https://github.com/albertjlay/statsmadeeasy',
-  },
-  {
-    img: nggImage,
-    title: 'NGG',
-    url: 'https://github.com/albertjlay/NGG',
-  },
-];
 
 export default Projects;
