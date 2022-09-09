@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import useWindowDimensions from '../../helpers/window-dimensions';
 import { aboutContent, badgesContent } from '../../content';
-import { AttentionSeeker, Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
+import { AttentionSeeker, Fade, Slide } from 'react-awesome-reveal';
 
 const WaveTop = () => (
   <svg
@@ -58,8 +58,8 @@ const About = () => {
 
           const slideDirection = width <= 900 ? 'up' : idx % 2 ? 'right' : 'left';
           return (
-            <Slide direction={slideDirection} triggerOnce>
-              <Container key={content.header} className='about-content'>
+            <Slide key={content.header} direction={slideDirection} triggerOnce>
+              <Container className='about-content'>
                 {idx % 2 && width > 900 ? <Text /> : <Image />}
                 {idx % 2 && width > 900 ? <Image /> : <Text />}
               </Container>

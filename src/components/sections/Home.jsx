@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import HiMemoji from '../../assets/memojis/hi.png';
 import PillButton from '../PillButton';
 import { emailInfo, resumeInfo } from '../../content';
-import { AttentionSeeker, Fade, JackInTheBox } from 'react-awesome-reveal';
+import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 
 const Home = () => {
   return (
