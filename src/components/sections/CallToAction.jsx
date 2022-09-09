@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import React from 'react';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
-import peaceHandsMemoji from '../../assets/memojis/peace-hands.png';
+import peaceHandsMemoji from '../../assets/memojis/peace-hands.webp';
 import { emailInfo, resumeInfo } from '../../content';
 import PillButton from '../PillButton';
 

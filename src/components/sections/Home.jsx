@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from '@mui/material';
-import HiMemoji from '../../assets/memojis/hi.png';
+import HiMemoji from '../../assets/memojis/hi.webp';
 import PillButton from '../PillButton';
 import { emailInfo, resumeInfo } from '../../content';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
