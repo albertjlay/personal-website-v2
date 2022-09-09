@@ -11,7 +11,7 @@ const Projects = () => {
         Stuffs I built when I was frantically looking for my first job, extremely bored, or in the
         rare cases where I'm feeling particularly inspired.
       </Typography>
-      <Fade>
+      <Fade triggerOnce fraction={0.1}>
         <div className='project-cards'>
           {projectContent.map(item => (
             <a

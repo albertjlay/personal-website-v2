@@ -35,7 +35,7 @@ const About = () => {
     <section className='about'>
       <WaveTop />
       <div className='about-body' id='about'>
-        <Fade>
+        <Fade triggerOnce>
           <Typography variant='h2'>Who Am I?</Typography>
           <Typography variant='subtitle1'>
             That's a multi-hour conversation, but here's the gist.
@@ -52,7 +52,7 @@ const About = () => {
 
           const slideDirection = width <= 900 ? 'up' : idx % 2 ? 'right' : 'left';
           return (
-            <Slide direction={slideDirection}>
+            <Slide direction={slideDirection} triggerOnce>
               <Container key={content.header} className='about-content'>
                 {idx % 2 && width > 900 ? <Text /> : <Image />}
                 {idx % 2 && width > 900 ? <Image /> : <Text />}
@@ -61,7 +61,7 @@ const About = () => {
           );
         })}
         <Typography variant='subtitle1'>and for the slightly braggy part...</Typography>
-        <AttentionSeeker effect='tada'>
+        <AttentionSeeker effect='tada' triggerOnce>
           <Container className='badges'>
             {badgesContent.map(b => (
               <a key={b.url} href={b.url} target='blank' rel='noreferrer noopenner'>

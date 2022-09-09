@@ -12,7 +12,7 @@ const CallToAction = () => {
         <img src={peaceHandsMemoji} alt='peace hands memoji' />
       </AttentionSeeker>
 
-      <Fade>
+      <Fade triggerOnce>
         <div>
           <Typography variant='h2'>That's it from me folks!</Typography>
           <Typography variant='subtitle1' sx={{ marginBottom: '20px' }}>

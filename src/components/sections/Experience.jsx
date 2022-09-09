@@ -38,7 +38,7 @@ const Experience = () => {
           <circle r='147' cx='887' cy='321'></circle>
         </g>
       </svg>
-      <Fade>
+      <Fade triggerOnce>
         <Typography variant='h2'>Where have I been?</Typography>
         <Typography variant='subtitle1'>
           Places where I tried my absolute best to build features without breaking things.

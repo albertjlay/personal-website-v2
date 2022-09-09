@@ -3,11 +3,11 @@ import { Typography } from '@mui/material';
 import HiMemoji from '../../assets/memojis/hi.png';
 import PillButton from '../PillButton';
 import { emailInfo, resumeInfo } from '../../content';
-import { Fade, JackInTheBox } from 'react-awesome-reveal';
+import { AttentionSeeker, Fade, JackInTheBox } from 'react-awesome-reveal';
 
 const Home = () => {
   return (
-    <Fade>
+    <Fade triggerOnce>
       <main>
         <div className='intro'>
           <Typography variant='subtitle1'>Hey there!</Typography>
@@ -25,9 +25,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <JackInTheBox cascade>
+        <AttentionSeeker cascade>
           <img src={HiMemoji} alt='Memoji of me saying hi!' />
-        </JackInTheBox>
+        </AttentionSeeker>
       </main>
     </Fade>
   );
