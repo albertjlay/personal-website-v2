@@ -32,7 +32,10 @@ const Socials = props => {
           <a key={s.name} href={s.url} target='_blank' rel='noreferrer'>
             <Button
               key={s.name}
-              sx={{ color: '#000', '&:hover': { backgroundColor: 'transparent' } }}
+              sx={{
+                color: '#000',
+                '&:hover': { backgroundColor: 'transparent' },
+              }}
             >
               {s.icon ? (
                 <Icon sx={{ color: '#000' }} />

@@ -34,6 +34,7 @@ main {
   @media (max-width: 900px) {
     flex-direction: column;
     text-align: center;
+    padding: 0 15vw 5vh 15vw;
 
     .intro {
       margin: auto;
@@ -186,6 +187,7 @@ section {
   }
 
   @media (max-width: 900px) {
+    padding: 0 7vw;
     .experience-tabs {
       .experience-tab {
         .experience-header {
@@ -194,6 +196,20 @@ section {
         }
         .experience-tools {
           text-align: center;
+
+          .experience-tool {
+            margin: 0 1.5rem;
+            margin-bottom: 10px;
+          }
+        }
+        .experience-body {
+          padding: 0;
+          li {
+            list-style-position: inside;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 25px;
+          }
         }
       }
     }
@@ -253,4 +269,10 @@ footer {
   align-items: center;
   height: 15vh;
   background-color: #fbf9f9;
+
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 20px 0;
+  }
 }
