@@ -21,7 +21,7 @@ import cpBadge from './assets/cp-badge.png';
 export const aboutContent = [
   {
     header: 'I code.',
-    body: "I believe in the power of quality code, thorough documentation, and rigorous testing. With these pillars as my foundation, I have built modular, component-based frontend softwares with React, Vue, and TypeScript. I also have experience designing robust backend systems using Go, C#, and .NET. Furthermore, I'm always looking to learn new technologies!",
+    body: "I believe in the power of quality code, thorough documentation, and rigorous testing. With these pillars as my foundation, I have built modular, component-based frontend softwares with React, Vue, and TypeScript. I also have experience designing robust backend systems using Go, C#, and .NET. I'm always looking for a cool, new technology to try out!",
     image: laptopMemoji,
     alt: 'Memoji of me working on my laptop.',
   },
@@ -33,7 +33,7 @@ export const aboutContent = [
   },
   {
     header: "I'm not sure really...",
-    body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, data science, and product management.",
+    body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, data science, and product management. It's been extremely fun exploring these multiple facets of computer science!",
     image: shrugMemoji,
     alt: 'Memoji of me shrugging.',
   },
