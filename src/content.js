@@ -1,22 +1,22 @@
-import laptopMemoji from './assets/memojis/laptop.png';
-import shrugMemoji from './assets/memojis/shrug.png';
-import partyMemoji from './assets/memojis/party.png';
+import laptopMemoji from './assets/memojis/laptop.webp';
+import shrugMemoji from './assets/memojis/shrug.webp';
+import partyMemoji from './assets/memojis/party.webp';
 import searchspringLogo from './assets/experiences/searchspring.svg';
-import imagineLogo from './assets/experiences/imagine-communications.png';
-import ihLogo from './assets/experiences/international-hub.png';
-import mathsocLogo from './assets/experiences/mathsoc.png';
-import covidWatchdogImage from './assets/projects/covid-watchdog.png';
-import nggImage from './assets/projects/ngg.png';
-import personalWebsiteImage from './assets/projects/personal-website.png';
-import pokedexImage from './assets/projects/pokedex.png';
-import statsMadeEasyImage from './assets/projects/statsmadeeasy.png';
-import tracenextImage from './assets/projects/tracenext.png';
-import tictactoeImage from './assets/projects/tic-tac-toe.png';
+import imagineLogo from './assets/experiences/imagine-communications.webp';
+import ihLogo from './assets/experiences/international-hub.webp';
+import mathsocLogo from './assets/experiences/mathsoc.webp';
+import covidWatchdogImage from './assets/projects/covid-watchdog.webp';
+import nggImage from './assets/projects/ngg.webp';
+import personalWebsiteImage from './assets/projects/personal-website.webp';
+import pokedexImage from './assets/projects/pokedex.webp';
+import statsMadeEasyImage from './assets/projects/statsmadeeasy.webp';
+import tracenextImage from './assets/projects/tracenext.webp';
+import tictactoeImage from './assets/projects/tic-tac-toe.webp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import saBadge from './assets/sa-badge.png';
-import cpBadge from './assets/cp-badge.png';
+import saBadge from './assets/sa-badge.webp';
+import cpBadge from './assets/cp-badge.webp';
 
 export const aboutContent = [
   {
