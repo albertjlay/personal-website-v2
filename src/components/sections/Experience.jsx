@@ -29,11 +29,10 @@ const Experience = () => {
         viewBox='0 0 900 475'
         xmlns='http://www.w3.org/2000/svg'
         version='1.1'
-        preserveAspectRatio='xMaxYMid'
+        preserveAspectRatio='xMidYMid'
       >
         <g fill={addAlpha(viewedExpColor, 0.2)}>
-          <circle r='156' cx='-50' cy='166'></circle>
-          {/* <circle r='69' cx='867' cy='55'></circle> */}
+          <circle r='156' cx='0' cy='166'></circle>
           <circle r='88' cx='879' cy='154'></circle>
           <circle r='147' cx='887' cy='321'></circle>
         </g>
@@ -71,6 +70,8 @@ const Experience = () => {
                 className='experience-tab'
                 sx={{
                   maxWidth: '100vw',
+                  backgroundColor: 'rgba(251,249,249, 0.5)',
+                  borderRadius: '20px',
                 }}
               >
                 <div className='experience-header'>
