@@ -5,7 +5,6 @@ import searchspringLogo from './assets/experiences/searchspring.svg';
 import imagineLogo from './assets/experiences/imagine-communications.png';
 import ihLogo from './assets/experiences/international-hub.png';
 import mathsocLogo from './assets/experiences/mathsoc.png';
-import cc3kImage from './assets/projects/cc3k.png';
 import covidWatchdogImage from './assets/projects/covid-watchdog.png';
 import nggImage from './assets/projects/ngg.png';
 import personalWebsiteImage from './assets/projects/personal-website.png';
@@ -16,6 +15,8 @@ import tictactoeImage from './assets/projects/tic-tac-toe.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import saBadge from './assets/sa-badge.png';
+import cpBadge from './assets/cp-badge.png';
 
 export const aboutContent = [
   {
@@ -35,6 +36,19 @@ export const aboutContent = [
     body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, data science, and product management.",
     image: shrugMemoji,
     alt: 'Memoji of me shrugging.',
+  },
+];
+
+export const badgesContent = [
+  {
+    image: saBadge,
+    alt: 'AWS Certified Solutions Architect Associate badge.',
+    url: 'https://www.credly.com/badges/76b1bd0a-8050-47b6-a8e6-6fb08409b478/public_url',
+  },
+  {
+    image: cpBadge,
+    alt: 'AWS Certified Cloud Practioner badge.',
+    url: 'https://www.credly.com/badges/f888cf33-9d91-467c-ab07-9f33c858c7be/public_url',
   },
 ];
 

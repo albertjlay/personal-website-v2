@@ -1,23 +1,8 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 import { Container } from '@mui/system';
-import saBadge from '../../assets/sa-badge.png';
-import cpBadge from '../../assets/cp-badge.png';
 import useWindowDimensions from '../../helpers/window-dimensions';
-import { aboutContent } from '../../content';
-
-const badges = [
-  {
-    image: saBadge,
-    alt: 'AWS Certified Solutions Architect Associate badge.',
-    url: 'https://www.credly.com/badges/76b1bd0a-8050-47b6-a8e6-6fb08409b478/public_url',
-  },
-  {
-    image: cpBadge,
-    alt: 'AWS Certified Cloud Practioner badge.',
-    url: 'https://www.credly.com/badges/f888cf33-9d91-467c-ab07-9f33c858c7be/public_url',
-  },
-];
+import { aboutContent, badgesContent } from '../../content';
 
 const WaveTop = () => (
   <svg className='top-wave' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -71,7 +56,7 @@ const About = () => {
         })}
         <Typography variant='subtitle1'>and for the slightly braggy part...</Typography>
         <Container className='badges'>
-          {badges.map(b => (
+          {badgesContent.map(b => (
             <a key={b.url} href={b.url} target='blank' rel='noreferrer noopenner'>
               <img src={b.image} alt={b.alt} />
             </a>
