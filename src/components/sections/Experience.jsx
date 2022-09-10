@@ -82,9 +82,16 @@ const Experience = () => {
                       <span style={{ color: ec.color, fontWeight: 500 }}>@ {ec.name}</span>
                     </Typography>
                     <Typography variant='h4'>
-                      {ec.location} (
-                      {ec.startDate.toLocaleString('default', { month: 'short', year: 'numeric' })}{' '}
-                      - {ec.endDate.toLocaleString('default', { month: 'short', year: 'numeric' })})
+                      {ec.location}
+                      <span className='experience-date'>
+                        (
+                        {ec.startDate.toLocaleString('default', {
+                          month: 'short',
+                          year: 'numeric',
+                        })}{' '}
+                        -{' '}
+                        {ec.endDate.toLocaleString('default', { month: 'short', year: 'numeric' })})
+                      </span>
                     </Typography>
                   </div>
                 </div>
