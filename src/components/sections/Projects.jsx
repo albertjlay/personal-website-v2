@@ -49,6 +49,11 @@ const Projects = () => {
                     width: '70%',
                     height: '70%',
                     padding: '1em',
+
+                    '&:before': {
+                      content: 'none',
+                      position: 'static',
+                    },
                   },
                   '@media (hover: hover) and (pointer: fine)': {
                     '&:hover .project-circle': {
