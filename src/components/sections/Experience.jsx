@@ -84,7 +84,7 @@ const Experience = () => {
                       <span style={{ color: ec.color, fontWeight: 500 }}>@ {ec.name}</span>
                     </Typography>
                     <Typography variant='h4'>
-                      {ec.location}
+                      {ec.location}{' '}
                       <span className='experience-date'>
                         (
                         {ec.startDate.toLocaleString('default', {
