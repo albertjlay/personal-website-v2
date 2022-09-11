@@ -12,6 +12,10 @@ import pokedexImage from './assets/projects/pokedex.webp';
 import statsMadeEasyImage from './assets/projects/statsmadeeasy.webp';
 import tracenextImage from './assets/projects/tracenext.webp';
 import tictactoeImage from './assets/projects/tic-tac-toe.webp';
+import personalWebsiteV2Image from './assets/projects/personal-website-v2.webp';
+import irisImage from './assets/projects/iris.webp';
+import customerChurnPredictorImage from './assets/projects/customer-churn-predictor.webp';
+import projectSundayImage from './assets/projects/project-sunday.webp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -132,6 +136,14 @@ export const projectContent = [
   //   title: 'CC3K',
   //   url: '',
   // },
+
+  {
+    img: personalWebsiteV2Image,
+    title: 'Personal Website V2',
+    url: 'https://github.com/albertjlay/personal-website-v2',
+    types: [ProjectType.Frontend, ProjectType.Infrastructure],
+    featured: true,
+  },
   {
     img: tictactoeImage,
     title: 'Tic Tac Toe',
@@ -147,12 +159,18 @@ export const projectContent = [
     featured: true,
   },
   {
+    img: projectSundayImage,
+    title: 'Project Sunday',
+    url: 'https://github.com/albertjlay/project-sunday',
+    types: [ProjectType.DataScience, ProjectType.Backend],
+    featured: true,
+  },
+  {
     img: covidWatchdogImage,
     title: 'Covid Watchdog',
     url: 'https://github.com/jaredjhe/Covid-Watchdog',
     types: [ProjectType.Frontend, ProjectType.Backend],
   },
-
   {
     img: personalWebsiteImage,
     title: 'Personal Website V1',
@@ -177,6 +195,18 @@ export const projectContent = [
     title: 'NGG',
     url: 'https://github.com/albertjlay/NGG',
     types: [ProjectType.Desktop],
+  },
+  {
+    img: customerChurnPredictorImage,
+    title: 'Customer Churn Predictor',
+    url: 'https://github.com/albertjlay/customer-churn-predictor',
+    types: [ProjectType.DataScience],
+  },
+  {
+    img: irisImage,
+    title: 'Iris',
+    url: 'https://github.com/albertjlay/iris',
+    types: [ProjectType.DataScience],
   },
 ];
 
