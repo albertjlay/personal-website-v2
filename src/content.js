@@ -133,17 +133,26 @@ export const projectContent = [
   //   url: '',
   // },
   {
+    img: tictactoeImage,
+    title: 'Tic Tac Toe',
+    url: 'https://github.com/albertjlay/tic-tac-toe',
+    types: [ProjectType.Frontend],
+    featured: true,
+  },
+  {
+    img: statsMadeEasyImage,
+    title: 'Stats Made Easy',
+    url: 'https://github.com/albertjlay/statsmadeeasy',
+    types: [ProjectType.DataScience, ProjectType.Desktop],
+    featured: true,
+  },
+  {
     img: covidWatchdogImage,
     title: 'Covid Watchdog',
     url: 'https://github.com/jaredjhe/Covid-Watchdog',
     types: [ProjectType.Frontend, ProjectType.Backend],
   },
-  {
-    img: tictactoeImage,
-    title: 'Tic Tac Toe',
-    url: 'https://github.com/albertjlay/tic-tac-toe',
-    types: [ProjectType.Frontend],
-  },
+
   {
     img: personalWebsiteImage,
     title: 'Personal Website V1',
@@ -162,12 +171,7 @@ export const projectContent = [
     url: 'https://github.com/levinaind/TO-Hacks-2021',
     types: [ProjectType.Frontend, ProjectType.Backend],
   },
-  {
-    img: statsMadeEasyImage,
-    title: 'Stats Made Easy',
-    url: 'https://github.com/albertjlay/statsmadeeasy',
-    types: [ProjectType.DataScience, ProjectType.Desktop],
-  },
+
   {
     img: nggImage,
     title: 'NGG',

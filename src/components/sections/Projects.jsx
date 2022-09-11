@@ -12,6 +12,9 @@ const Projects = () => {
         Stuffs I built when I was frantically looking for my first job, extremely bored, or in the
         rare cases where I'm feeling particularly inspired.
       </Typography>
+      <Typography variant='subtitle2' sx={{ marginBottom: '20px' }}>
+        Check out the ones labelled 💛 for some of my favorite projects!
+      </Typography>
       <Fade triggerOnce fraction={0.1}>
         <div className='project-cards'>
           {projectContent.map(item => (
@@ -67,6 +70,11 @@ const Projects = () => {
                 }}
               >
                 <div className='project-info'>
+                  {item.featured && (
+                    <Typography sx={{ fontSize: '14px', fontWeight: '700' }} variant='subtitle1'>
+                      💛
+                    </Typography>
+                  )}
                   <Typography sx={{ fontSize: '20px', marginBottom: '10px' }} variant='h4'>
                     {item.title}
                   </Typography>
