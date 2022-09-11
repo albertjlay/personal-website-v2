@@ -2,6 +2,7 @@ import { Typography, Paper } from '@mui/material';
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { projectContent } from '../../content';
+import ProjectTypeChip from '../ProjectTypeChip';
 
 const Projects = () => {
   return (
@@ -31,7 +32,7 @@ const Projects = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   margin: '10px',
-                  background: 'rgba(255, 255, 255, .15)',
+                  background: 'rgba(255, 255, 255, .3)',
 
                   '&:before': {
                     content: "''",
@@ -46,8 +47,8 @@ const Projects = () => {
                     transition: 'opacity 300ms ease-in',
                   },
                   '@media(max-width: 900px)': {
-                    width: '70%',
-                    height: '70%',
+                    // width: '70%',
+                    // height: '70%',
                     padding: '1em',
 
                     '&:before': {
@@ -56,7 +57,7 @@ const Projects = () => {
                     },
                   },
                   '@media (hover: hover) and (pointer: fine)': {
-                    '&:hover .project-circle': {
+                    '&:hover .project-info': {
                       backgroundColor: '#fbf9f9',
                     },
                     '&:hover:before': {
@@ -65,28 +66,16 @@ const Projects = () => {
                   },
                 }}
               >
-                <Typography
-                  className='project-circle'
-                  sx={{
-                    borderRadius: '50%',
-                    width: '200px',
-                    height: '200px',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    fontSize: '20px',
-                    zIndex: 2,
-
-                    '@media(max-width: 900px)': {
-                      height: '100px',
-                      margin: '15px 0',
-                    },
-                  }}
-                  variant='h4'
-                >
-                  {item.title}
-                </Typography>
+                <div className='project-info'>
+                  <Typography sx={{ fontSize: '20px', marginBottom: '10px' }} variant='h4'>
+                    {item.title}
+                  </Typography>
+                  <div className='project-types'>
+                    {item.types.map(t => (
+                      <ProjectTypeChip key={t.description} variant={t} />
+                    ))}
+                  </div>
+                </div>
               </Paper>
             </a>
           ))}

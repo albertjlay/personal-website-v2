@@ -17,6 +17,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import saBadge from './assets/sa-badge.webp';
 import cpBadge from './assets/cp-badge.webp';
+import { ProjectType } from './types';
 
 export const aboutContent = [
   {
@@ -135,36 +136,43 @@ export const projectContent = [
     img: covidWatchdogImage,
     title: 'Covid Watchdog',
     url: 'https://github.com/jaredjhe/Covid-Watchdog',
+    types: [ProjectType.Frontend, ProjectType.Backend],
   },
   {
     img: tictactoeImage,
     title: 'Tic Tac Toe',
     url: 'https://github.com/albertjlay/tic-tac-toe',
+    types: [ProjectType.Frontend],
   },
   {
     img: personalWebsiteImage,
-    title: 'Personal Website',
+    title: 'Personal Website V1',
     url: 'https://github.com/albertjlay/albert-lay',
+    types: [ProjectType.Frontend, ProjectType.Infrastructure],
   },
   {
     img: pokedexImage,
     title: 'Pokedex',
     url: 'https://github.com/albertjlay/pokedex',
+    types: [ProjectType.Frontend],
   },
   {
     img: tracenextImage,
     title: 'TraceNext',
     url: 'https://github.com/levinaind/TO-Hacks-2021',
+    types: [ProjectType.Frontend, ProjectType.Backend],
   },
   {
     img: statsMadeEasyImage,
     title: 'Stats Made Easy',
     url: 'https://github.com/albertjlay/statsmadeeasy',
+    types: [ProjectType.DataScience, ProjectType.Desktop],
   },
   {
     img: nggImage,
     title: 'NGG',
     url: 'https://github.com/albertjlay/NGG',
+    types: [ProjectType.Desktop],
   },
 ];
 
