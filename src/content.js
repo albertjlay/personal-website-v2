@@ -31,7 +31,7 @@ export const aboutContent = [
     alt: 'Memoji of me working on my laptop.',
   },
   {
-    header: 'I (try) to have fun!',
+    header: 'I (try to) have fun!',
     body: 'While I *love* my work, it is not my life. Work-life balance is extremely important to me. On my free time, I scour the city for good food, enjoy long chats with good buddies, and lose in both League & Smash. I also love trying out new activities! Some of my newly discovered hobbies include skiing, boxing, and blogging.',
     image: partyMemoji,
     alt: 'Memoji of me partying.',
@@ -143,6 +143,7 @@ export const projectContent = [
     url: 'https://github.com/albertjlay/personal-website-v2',
     types: [ProjectType.Frontend, ProjectType.Infrastructure],
     featured: true,
+    description: 'the 2022 redesign of my personal website. (This website right here!)',
   },
   {
     img: tictactoeImage,
@@ -150,6 +151,8 @@ export const projectContent = [
     url: 'https://github.com/albertjlay/tic-tac-toe',
     types: [ProjectType.Frontend],
     featured: true,
+    description:
+      "tic tac toe equipped with an unbeatable AI implementing Newell and Simon's algorithm.",
   },
   {
     img: statsMadeEasyImage,
@@ -157,57 +160,71 @@ export const projectContent = [
     url: 'https://github.com/albertjlay/statsmadeeasy',
     types: [ProjectType.DataScience, ProjectType.Desktop],
     featured: true,
+    description:
+      'calculates probabilities modelled with the normal, binomial, and Poisson distribution.',
   },
-  {
-    img: projectSundayImage,
-    title: 'Project Sunday',
-    url: 'https://github.com/albertjlay/project-sunday',
-    types: [ProjectType.DataScience, ProjectType.Backend],
-    featured: true,
-  },
+  // {
+  //   img: projectSundayImage,
+  //   title: 'Project Sunday',
+  //   url: 'https://github.com/albertjlay/project-sunday',
+  //   types: [ProjectType.DataScience, ProjectType.Backend],
+  //   featured: true,
+  //   description: 'the 2022 redesign of my personal website. (This website right here!)',
+  // },
   {
     img: covidWatchdogImage,
     title: 'Covid Watchdog',
     url: 'https://github.com/jaredjhe/Covid-Watchdog',
     types: [ProjectType.Frontend, ProjectType.Backend],
+    description:
+      'determines the risk of visiting a Canadian region based on number of Covid-19 cases and other factors.',
   },
   {
     img: personalWebsiteImage,
     title: 'Personal Website V1',
     url: 'https://github.com/albertjlay/albert-lay',
     types: [ProjectType.Frontend, ProjectType.Infrastructure],
+    description: 'my first personal website.',
   },
   {
     img: pokedexImage,
-    title: 'Pokedex',
+    title: 'Pokédex',
     url: 'https://github.com/albertjlay/pokedex',
     types: [ProjectType.Frontend],
+    description:
+      'displays basic statuses for each Pokémon using data from PokeAPI and Pokeres Bastion.',
   },
   {
     img: tracenextImage,
     title: 'TraceNext',
     url: 'https://github.com/levinaind/TO-Hacks-2021',
     types: [ProjectType.Frontend, ProjectType.Backend],
+    description:
+      'empowers users to self-report recently-visited locations when testing positive for COVID-19 to ease contact tracing.',
   },
 
   {
     img: nggImage,
-    title: 'NGG',
+    title: 'Number Guessing Game',
     url: 'https://github.com/albertjlay/NGG',
     types: [ProjectType.Desktop],
+    description:
+      'randomly generates a number for players to guess with the help of math-based hints.',
   },
-  {
-    img: customerChurnPredictorImage,
-    title: 'Customer Churn Predictor',
-    url: 'https://github.com/albertjlay/customer-churn-predictor',
-    types: [ProjectType.DataScience],
-  },
-  {
-    img: irisImage,
-    title: 'Iris',
-    url: 'https://github.com/albertjlay/iris',
-    types: [ProjectType.DataScience],
-  },
+  // {
+  //   img: customerChurnPredictorImage,
+  //   title: 'Customer Churn Predictor',
+  //   url: 'https://github.com/albertjlay/customer-churn-predictor',
+  //   types: [ProjectType.DataScience],
+  //   description: 'lorem',
+  // },
+  // {
+  //   img: irisImage,
+  //   title: 'Iris',
+  //   url: 'https://github.com/albertjlay/iris',
+  //   types: [ProjectType.DataScience],
+  //   description: 'lorem',
+  // },
 ];
 
 export const resumeInfo = {

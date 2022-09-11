@@ -48,6 +48,8 @@ const Experience = () => {
               value={viewedExp}
               onChange={changeViewedExp}
               className='experience-tab-list'
+              scrollButtons={true}
+              allowScrollButtonsMobile
               variant='scrollable'
               sx={{ '& .MuiTabs-indicator': { backgroundColor: viewedExpColor }, width: '100%' }}
             >

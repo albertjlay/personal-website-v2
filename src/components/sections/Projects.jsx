@@ -28,7 +28,7 @@ const Projects = () => {
               <Paper
                 sx={{
                   width: '250px',
-                  height: '300px',
+                  height: '350px',
                   borderRadius: '5px',
                   backdropFilter: 'blur(10px)',
                   display: 'flex',
@@ -50,8 +50,6 @@ const Projects = () => {
                     transition: 'opacity 300ms ease-in',
                   },
                   '@media(max-width: 900px)': {
-                    // width: '70%',
-                    // height: '70%',
                     padding: '1em',
 
                     '&:before': {
@@ -61,7 +59,7 @@ const Projects = () => {
                   },
                   '@media (hover: hover) and (pointer: fine)': {
                     '&:hover .project-info': {
-                      backgroundColor: '#fbf9f9',
+                      backgroundColor: 'rgba(251, 249, 249, 0.8)',
                     },
                     '&:hover:before': {
                       opacity: 1,
@@ -83,6 +81,9 @@ const Projects = () => {
                       <ProjectTypeChip key={t.description} variant={t} />
                     ))}
                   </div>
+                  <Typography variant='body1' sx={{ margin: '10px', fontSize: '0.85rem' }}>
+                    {item.description}
+                  </Typography>
                 </div>
               </Paper>
             </a>
