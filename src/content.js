@@ -67,9 +67,11 @@ export const experienceContent = [
     endDate: new Date(2022, 7),
     tools: ['Go', 'Vue', 'GCP', 'Docker', 'Kubernetes'],
     body: [
-      "Restructured the development environment's Docker images to compile for ARM architectures and reduced cumulative size by 6.58 GB using various optimizations.",
-      "Consolidated the internal Slack bot's various test commands into one, which increased available company-wide Slack API command capacity by 36%.",
+      "Restructured the development environment's Docker images to compile for ARM architectures and reduced size by 6.58 GB using multi-stage builds & smaller base images.",
+      "Consolidated the internal Slack bot's various test commands into one, which increased available company-wide Slack API slash command capacity by 36%.",
       'Reengineered a core feature from a monolithic PHP codebase into a modern Go microservice to tackle technical debt, increase test coverage, and improve code readability.',
+      'Migrated 10+ Rundeck jobs into Argo Workflows for a stronger integration with Kubernetes.',
+      'Developed features for an internal task management tool using Asana API, Vue, and TypeScript.',
     ],
     quote:
       'Albert has proven to be an outstanding co-op. He showed initiative at every step of the way, constantly seeking to learn new technologies that would help both Searchspring and his future career. He actively built relationships with many other employees and proved to be an extremely effective collaborator. He did not hesitate to ask questions and offer feedback on how he could best be utilized during his time at Searchspring.',
@@ -87,9 +89,9 @@ export const experienceContent = [
     endDate: new Date(2022, 3),
     tools: ['C#', 'TypeScript', '.NET', 'Vue', 'PostgreSQL'],
     body: [
-      'Redesigned a data model in the core product to accept user-defined tags while maintaining backward compatibility with previous JSON configurations.',
+      'Redesigned a data model in the core product to accept user-defined tags while maintaining backward compatibility with previous JSON configurations using C#, .NET, and PostgreSQL.',
+      "Implemented default configurations in Vue, TypeScript, and C# that mirror legacy behaviours to minimize disruptions to customers' workflows when upgrading to the new GA.",
       'Built a concurrent process that emits RabbitMQ messages when available tags are updated.',
-      "Implemented default configurations that mirror legacy behaviours to minimize disruptions to customers' workflows when upgrading to the new GA.",
     ],
     quote:
       "Albert has been an integral member of the team this term. His work on a number of time sensitive and critical tasks have been both instrumental to the success of the team's goals, and reflect a level of work closer to that of a full time- rather than just a coop. With his driven and positive attitude, coupled with his eagerness to learn, Albert was a pleasure to work with this term. Great work!",
