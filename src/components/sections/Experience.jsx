@@ -81,7 +81,10 @@ const Experience = () => {
                   <div className='experience-header-text'>
                     <Typography variant='h3' sx={{ fontWeight: 300 }}>
                       {ec.role}{' '}
-                      <span style={{ color: ec.color, fontWeight: 500 }}>@ {ec.name}</span>
+                      <span style={{ color: ec.color, fontWeight: 500 }}>
+                        @ <br />
+                        {ec.name}
+                      </span>
                     </Typography>
                     <Typography variant='h4'>
                       {ec.location}{' '}

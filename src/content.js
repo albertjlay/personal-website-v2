@@ -1,6 +1,7 @@
 import laptopMemoji from './assets/memojis/laptop.webp';
 import shrugMemoji from './assets/memojis/shrug.webp';
 import partyMemoji from './assets/memojis/party.webp';
+import topHatLogo from './assets/experiences/top-hat.webp';
 import searchspringLogo from './assets/experiences/searchspring.svg';
 import imagineLogo from './assets/experiences/imagine-communications.webp';
 import ihLogo from './assets/experiences/international-hub.webp';
@@ -58,6 +59,28 @@ export const badgesContent = [
 ];
 
 export const experienceContent = [
+  {
+    name: 'Top Hat',
+    role: 'Software Developer',
+    logo: topHatLogo,
+    location: 'Toronto',
+    startDate: new Date(2023, 0),
+    endDate: new Date(2023, 3),
+    tools: ['React', 'ProseMirror', 'Django', 'QuickSight', 'Datadog'],
+    body: [
+      'Developed features for a WCAG-compliant WYSIWYG question editor and renderer using React, Tiptap, and Prosemirror for 1 million+ post-secondary students & instructors across North America.',
+      'Actively collaborated to refine team processes, shrinking cycle time by 4 days for each ticket.',
+      'Outlined strategies to enhance the observability of the application by collaborating with various stakeholders to identify and capture critical metrics in Datadog and QuickSight.',
+      'Created an optimized endpoint in Django to bulk fetch student responses, consolidating multiple API requests into one and reducing page load time.',
+      'Updated client-side & server-side validation logic with Pydantic to enhance application reliability.',
+    ],
+    quote:
+      'Albert did a fantastic job as a co-op, he was well beyond expectations. He even got recognized among the leadership team during one of the delivery review meetings where, just through his own efforts, he brought down the cycle time by 4 days.',
+    quoteWriterName: 'Rahul Bhatt',
+    quoteWriterPosition: 'Engineering Manager',
+    color: '#934af3',
+    emojiClass: 'top-hat',
+  },
   {
     name: 'Searchspring',
     role: 'Software Developer',
