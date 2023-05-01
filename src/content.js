@@ -123,36 +123,6 @@ export const experienceContent = [
     color: '#012B58',
     emojiClass: 'earth',
   },
-  {
-    name: 'International Hub',
-    role: 'Web Developer',
-    logo: ihLogo,
-    location: 'Remote - Toronto',
-    startDate: new Date(2021, 6),
-    endDate: new Date(2021, 9),
-    tools: ['React', 'Sass', 'Jest', 'ESLint'],
-    body: [
-      'Headed the development of the redesigned website to serve 1600+ community members.',
-      'Transformed design mocks into a fully functional SPA using a modular component architecture',
-    ],
-    color: '#BA78D7',
-    emojiClass: 'octopus',
-  },
-  {
-    name: 'UW MathSoc',
-    role: 'Website Developer',
-    logo: mathsocLogo,
-    location: 'Remote - Waterloo',
-    startDate: new Date(2021, 0),
-    endDate: new Date(2021, 3),
-    tools: ['WordPress'],
-    body: [
-      'Spearheaded the development of the MathSoc Cartoons page in collaboration with their coordinator, which houses 18 comics created over 3 terms.',
-      'Updated website with events targeted to 8,000+ students in the Faculty of Mathematics.',
-    ],
-    color: '#C50078',
-    emojiClass: 'cherry-blossom',
-  },
 ];
 
 export const projectContent = [

@@ -106,6 +106,7 @@ section {
 .experience {
   margin-top: -10px;
   position: relative;
+  height: 900px;
 
   .background {
     position: absolute;
@@ -192,6 +193,7 @@ section {
 
   @media (max-width: 900px) {
     padding: 5vh 7vw;
+    height: auto;
     .experience-tabs {
       .experience-tab {
         .experience-header {

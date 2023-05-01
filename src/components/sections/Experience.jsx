@@ -51,7 +51,11 @@ const Experience = () => {
               scrollButtons={true}
               allowScrollButtonsMobile
               variant='scrollable'
-              sx={{ '& .MuiTabs-indicator': { backgroundColor: viewedExpColor }, width: '100%' }}
+              sx={{
+                '& .MuiTabs-indicator': { backgroundColor: viewedExpColor },
+                width: '100%',
+                '& .MuiTabs-flexContainer': { display: 'flex', justifyContent: 'center' },
+              }}
             >
               {experienceContent.map(ec => (
                 <Tab
