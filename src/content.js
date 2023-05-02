@@ -224,7 +224,7 @@ export const projectContent = [
 
 export const resumeInfo = {
   name: 'Resume',
-  url: 'https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/albert-lay-resume-f22.pdf',
+  url: 'https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/resume-albert-lay.pdf',
 };
 export const emailInfo = {
   name: 'Email',
