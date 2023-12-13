@@ -3,7 +3,13 @@
 }
 
 a {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
   text-decoration: none; /* no underline */
+}
+
+.accent-text {
+  font-family: 'Caveat', cursive;
 }
 
 main {
@@ -267,9 +273,8 @@ section.call-to-action {
   background-color: #e3e4e0;
   text-align: left;
 
-  img {
-    width: 200px;
-    margin: 0 100px;
+  .lottie {
+    width: 400px;
   }
 
   .action-buttons {
@@ -281,7 +286,7 @@ section.call-to-action {
     flex-direction: column;
     text-align: center;
 
-    img {
+    .lottie {
       width: 30vw;
     }
 

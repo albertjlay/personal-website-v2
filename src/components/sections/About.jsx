@@ -4,7 +4,6 @@ import { Container } from '@mui/system';
 import useWindowDimensions from '../../helpers/window-dimensions';
 import { aboutContent, badgesContent } from '../../content';
 import { AttentionSeeker, Fade, Slide } from 'react-awesome-reveal';
-import Lottie from 'lottie-react';
 
 const WaveTop = () => (
   <svg
@@ -56,16 +55,13 @@ const About = () => {
             </Container>
           );
           const Image = () => <img src={content.image} alt={content.alt} />;
-          const AboutLottie = () => (
-            <Lottie className='lottie' animationData={content.lottie} loop={true} />
-          );
 
           const slideDirection = width <= 900 ? 'up' : idx % 2 ? 'right' : 'left';
           return (
             <Slide key={content.header} direction={slideDirection} triggerOnce>
               <Container className='about-content'>
-                {idx % 2 && width > 900 ? <Text /> : <AboutLottie />}
-                {idx % 2 && width > 900 ? <AboutLottie /> : <Text />}
+                {idx % 2 && width > 900 ? <Text /> : <Image />}
+                {idx % 2 && width > 900 ? <Image /> : <Text />}
               </Container>
             </Slide>
           );

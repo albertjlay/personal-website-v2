@@ -5,7 +5,7 @@ import PillButton from '../PillButton';
 import { emailInfo, overviewContent, resumeInfo } from '../../content';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 import Lottie from 'lottie-react';
-import avatar from '../../assets/lotties/avatar.json';
+import bubbleTeaPanda from '../../assets/lotties/bubble-tea-panda.json';
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         <div className='intro'>
           <Typography variant='subtitle1'>Hey there!</Typography>
           <Typography variant='h1'>
-            I'm <span className='name'>Albert</span>
+            I'm <span className='name accent-text'>Albert</span>
           </Typography>
           <Typography variant='subtitle1' sx={{ marginBottom: '20px' }}>
             {overviewContent}
@@ -26,9 +26,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <AttentionSeeker cascade>
-          <Lottie animationData={avatar} loop={true} />;
-        </AttentionSeeker>
+        <Lottie animationData={bubbleTeaPanda} loop={true} />;
       </main>
     </Fade>
   );

@@ -1,17 +1,15 @@
 import { Typography } from '@mui/material';
 import React from 'react';
-import { AttentionSeeker, Fade } from 'react-awesome-reveal';
-import peaceHandsMemoji from '../../assets/memojis/peace-hands.webp';
+import pandaLottie from '../../assets/lotties/sleep-panda.json';
 import { emailInfo, resumeInfo } from '../../content';
 import PillButton from '../PillButton';
+import Lottie from 'lottie-react';
+import { Fade } from 'react-awesome-reveal';
 
 const CallToAction = () => {
   return (
     <section className='call-to-action'>
-      <AttentionSeeker>
-        <img src={peaceHandsMemoji} alt='peace hands memoji' />
-      </AttentionSeeker>
-
+      <Lottie className='lottie' animationData={pandaLottie} loop={true} />;
       <Fade triggerOnce>
         <div>
           <Typography variant='h2'>That's it from me folks!</Typography>
