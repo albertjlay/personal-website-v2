@@ -1,3 +1,4 @@
+import React from 'react';
 import laptopMemoji from './assets/memojis/laptop.webp';
 import shrugMemoji from './assets/memojis/shrug.webp';
 import partyMemoji from './assets/memojis/party.webp';
@@ -23,24 +24,40 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import saBadge from './assets/sa-badge.webp';
 import cpBadge from './assets/cp-badge.webp';
 import { ProjectType } from './types';
+import { Link } from '@mui/material';
+import frontendLottie from './assets/lotties/frontend.json';
+
+export const overviewContent = (
+  <>
+    I'm a software developer with a year of co-op experience and a fourth-year student at the
+    University of Waterloo. Currently based in New York and working in{' '}
+    <Link href='https://www.titan.com/' underline='hover' target='_blank' rel='noreferrer'>
+      Titan
+    </Link>{' '}
+    as a software engineer intern.
+  </>
+);
 
 export const aboutContent = [
   {
-    header: 'I code.',
+    header: 'I make pretty things.',
     body: 'I believe in the power of quality code, thorough documentation, and rigorous testing. With these pillars as my foundation, I have built accessible, intuitive frontend applications with React, Vue, and TypeScript, as well as designed robust backend endpoints using Django, Go, and .NET. I’m always looking for a cool, new technology to try out!',
     image: laptopMemoji,
+    lottie: frontendLottie,
     alt: 'Memoji of me working on my laptop.',
   },
   {
-    header: 'I (try to) have fun!',
+    header: 'I make robust systems.',
     body: 'While I *love* my work, it is not my life. Work-life balance is extremely important to me. On my free time, I scour the city for good coffee, enjoy long chats with cool people, and try not to embarass myself while dancing. I also love trying out new activities! Some of my newly discovered hobbies include skiing, boxing, and biking.',
     image: partyMemoji,
+    lottie: frontendLottie,
     alt: 'Memoji of me partying.',
   },
   {
     header: "I'm not sure really...",
     body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, artificial intelligence, and data science. I plan to explore the field as much as I can. Not settling down just yet!",
     image: shrugMemoji,
+    lottie: frontendLottie,
     alt: 'Memoji of me shrugging.',
   },
 ];
