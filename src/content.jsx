@@ -5,8 +5,6 @@ import partyMemoji from './assets/memojis/party.webp';
 import topHatLogo from './assets/experiences/top-hat.webp';
 import searchspringLogo from './assets/experiences/searchspring.svg';
 import imagineLogo from './assets/experiences/imagine-communications.webp';
-import ihLogo from './assets/experiences/international-hub.webp';
-import mathsocLogo from './assets/experiences/mathsoc.webp';
 import covidWatchdogImage from './assets/projects/covid-watchdog.webp';
 import nggImage from './assets/projects/ngg.webp';
 import personalWebsiteImage from './assets/projects/personal-website.webp';
@@ -15,17 +13,11 @@ import statsMadeEasyImage from './assets/projects/statsmadeeasy.webp';
 import tracenextImage from './assets/projects/tracenext.webp';
 import tictactoeImage from './assets/projects/tic-tac-toe.webp';
 import personalWebsiteV2Image from './assets/projects/personal-website-v2.webp';
-import irisImage from './assets/projects/iris.webp';
-import customerChurnPredictorImage from './assets/projects/customer-churn-predictor.webp';
-import projectSundayImage from './assets/projects/project-sunday.webp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import saBadge from './assets/sa-badge.webp';
-import cpBadge from './assets/cp-badge.webp';
 import { ProjectType } from './types';
 import { Link } from '@mui/material';
-import { AWSLogo } from './components/svg';
 
 export const overviewContent = (
   <>
@@ -319,12 +311,6 @@ export const experienceContent = [
 ];
 
 export const projectContent = [
-  // {
-  //   img: cc3kImage,
-  //   title: 'CC3K',
-  //   url: '',
-  // },
-
   {
     img: personalWebsiteV2Image,
     title: 'Personal Website V2',
@@ -351,14 +337,7 @@ export const projectContent = [
     description:
       'calculates probabilities modelled with the normal, binomial, and Poisson distribution.',
   },
-  // {
-  //   img: projectSundayImage,
-  //   title: 'Project Sunday',
-  //   url: 'https://github.com/albertjlay/project-sunday',
-  //   types: [ProjectType.DataScience, ProjectType.Backend],
-  //   featured: true,
-  //   description: 'the 2022 redesign of my personal website. (This website right here!)',
-  // },
+
   {
     img: covidWatchdogImage,
     title: 'Covid Watchdog',
@@ -399,20 +378,6 @@ export const projectContent = [
     description:
       'randomly generates a number for players to guess with the help of math-based hints.',
   },
-  // {
-  //   img: customerChurnPredictorImage,
-  //   title: 'Customer Churn Predictor',
-  //   url: 'https://github.com/albertjlay/customer-churn-predictor',
-  //   types: [ProjectType.DataScience],
-  //   description: 'lorem',
-  // },
-  // {
-  //   img: irisImage,
-  //   title: 'Iris',
-  //   url: 'https://github.com/albertjlay/iris',
-  //   types: [ProjectType.DataScience],
-  //   description: 'lorem',
-  // },
 ];
 
 export const resumeInfo = {

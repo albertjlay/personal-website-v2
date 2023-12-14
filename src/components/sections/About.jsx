@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import useWindowDimensions from '../../helpers/window-dimensions';
 import { aboutContent, badgesContent } from '../../content';
-import { AttentionSeeker, Fade, Slide } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 const WaveTop = () => (
   <svg
@@ -63,13 +63,13 @@ const About = () => {
           );
         })}
         <Typography variant='subtitle1'>and my weapons of choice</Typography>
-        <AttentionSeeker effect='tada' triggerOnce>
+        <Fade triggerOnce>
           <Container className='badges'>
             {badgesContent.map(b => (
               <span key={b.id}>{b.icon}</span>
             ))}
           </Container>
-        </AttentionSeeker>
+        </Fade>
       </div>
       <WaveBottom />
     </section>
