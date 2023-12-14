@@ -44,7 +44,7 @@ export const aboutContent = [
         I make <span className='accent-text'>pretty</span> things.
       </>
     ),
-    body: 'I believe in the power of quality code, thorough documentation, and rigorous testing. With these pillars as my foundation, I have built accessible, intuitive frontend applications with React, Vue, and TypeScript, as well as designed robust backend endpoints using Django, Go, and .NET. I’m always looking for a cool, new technology to try out!',
+    body: 'Throughout my co-ops and personal projects, I have gained extensive experience designing intuitive applications and developing a modular frontend codebase. Including this one! During my exchange term, I took a master’s-level Interaction Design course to gain a deeper understanding of user-centric design principles, honing my skills in creating seamless user experiences.',
     image: laptopMemoji,
     alt: 'Memoji of me working on my laptop.',
   },
@@ -54,7 +54,23 @@ export const aboutContent = [
         I develop <span className='accent-text'>robust</span> systems.
       </>
     ),
-    body: 'While I *love* my work, it is not my life. Work-life balance is extremely important to me. On my free time, I scour the city for good coffee, enjoy long chats with cool people, and try not to embarass myself while dancing. I also love trying out new activities! Some of my newly discovered hobbies include skiing, boxing, and biking.',
+    body: (
+      <>
+        I have hands-on experience across the entire software development lifecycle, encompassing
+        tasks ranging from formulating requirements and constructing RESTful APIs to deploying code.
+        I am also an{' '}
+        <Link
+          href='https://www.credly.com/badges/76b1bd0a-8050-47b6-a8e6-6fb08409b478/public_url'
+          underline='hover'
+          target='_blank'
+          rel='noreferrer'
+        >
+          AWS Certified Solutions Architect
+        </Link>{' '}
+        , equipping me with the knowledge to design scalable systems that goes beyond the AWS
+        environment.
+      </>
+    ),
     image: partyMemoji,
     alt: 'Memoji of me partying.',
   },
@@ -64,7 +80,7 @@ export const aboutContent = [
         I seek <span className='accent-text'>exciting</span> journeys.
       </>
     ),
-    body: "While I'd like to pretend that I have everything figured out, I really don't. I'm still halfway through my bachelor's degree and I'm taking this time to explore all facets of software development & beyond. This includes system design, artificial intelligence, and data science. I plan to explore the field as much as I can. Not settling down just yet!",
+    body: 'While I love my work, I also make sure to live my life to the fullest. Simple things I enjoy: Scouring the city for good coffee, long chats with cool people, and trying not to embarrass myself dancing. Though the most thrilling experience so far was going on exchange to Sweden, where I was able to meet friends from around the world, immerse myself in the culture, and witness countless breathtaking sights!',
     image: shrugMemoji,
     alt: 'Memoji of me shrugging.',
   },
