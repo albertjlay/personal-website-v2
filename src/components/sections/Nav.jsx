@@ -22,7 +22,7 @@ const NavBar = () => {
                 sx={{
                   color: '#000',
                   textTransform: 'lowercase',
-                  '&:hover': { backgroundColor: 'transparent' },
+                  '&:hover': { backgroundColor: 'transparent', color: '#5e8e44' },
                   fontSize: '1.2rem',
                   padding: '0 30px',
                 }}

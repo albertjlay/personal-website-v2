@@ -31,7 +31,7 @@ const Experience = () => {
         version='1.1'
         preserveAspectRatio='xMidYMid'
       >
-        <g fill={addAlpha(viewedExpColor, 0.2)}>
+        <g fill={addAlpha(viewedExpColor, 0.2)} style={{ transition: 'fill 300ms ease-in' }}>
           <circle r='156' cx='0' cy='166'></circle>
           <circle r='88' cx='879' cy='154'></circle>
           <circle r='147' cx='887' cy='321'></circle>
@@ -52,6 +52,7 @@ const Experience = () => {
               variant={window.innerWidth > 800 ? 'standard' : 'scrollable'}
               sx={{
                 '& .MuiTabs-indicator': { backgroundColor: viewedExpColor },
+
                 width: '100%',
               }}
             >

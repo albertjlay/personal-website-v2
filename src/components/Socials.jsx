@@ -15,7 +15,11 @@ const Socials = props => {
               key={s.name}
               sx={{
                 color: '#000',
-                '&:hover': { backgroundColor: 'transparent' },
+                '&:hover, &:hover svg': {
+                  backgroundColor: 'transparent',
+                  color: '#5e8e44',
+                  transition: 'all 150ms linear',
+                },
               }}
             >
               {s.icon ? (
