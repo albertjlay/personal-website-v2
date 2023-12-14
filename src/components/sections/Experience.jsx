@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Typography } from '@mui/material';
+import { Link, Tab, Typography } from '@mui/material';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Container } from '@mui/system';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
@@ -39,9 +39,7 @@ const Experience = () => {
       </svg>
       <Fade triggerOnce>
         <Typography variant='h2'>Where have I been?</Typography>
-        <Typography variant='subtitle1'>
-          Places where I tried my absolute best to build features without breaking things.
-        </Typography>
+        <Typography variant='subtitle1'>Places I have had the joy to work with.</Typography>
         <Container className='experience-tabs'>
           <TabContext value={viewedExp}>
             <TabList
@@ -85,9 +83,16 @@ const Experience = () => {
                   <div className='experience-header-text'>
                     <Typography variant='h3' sx={{ fontWeight: 300 }}>
                       {ec.role}{' '}
-                      <span style={{ color: ec.color, fontWeight: 500 }}>
+                      <span className='accent-text' style={{ color: ec.color, fontWeight: 500 }}>
                         @ <br />
-                        {ec.name}
+                        <Link
+                          href={ec.url}
+                          underline='hover'
+                          color={ec.color}
+                          textDecorationSkipInk
+                        >
+                          {ec.name}
+                        </Link>
                       </span>
                     </Typography>
                     <Typography variant='h4'>
