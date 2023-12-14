@@ -26,7 +26,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <Lottie animationData={bubbleTeaPanda} loop={true} />;
+        <Lottie animationData={bubbleTeaPanda} loop={true} style={{ width: '350px' }} />;
       </main>
     </Fade>
   );

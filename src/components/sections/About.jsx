@@ -62,13 +62,11 @@ const About = () => {
             </Slide>
           );
         })}
-        <Typography variant='subtitle1'>and for the slightly braggy part...</Typography>
+        <Typography variant='subtitle1'>and my weapons of choice</Typography>
         <AttentionSeeker effect='tada' triggerOnce>
           <Container className='badges'>
             {badgesContent.map(b => (
-              <a key={b.url} href={b.url} target='blank' rel='noreferrer noopenner'>
-                <img src={b.image} alt={b.alt} />
-              </a>
+              <span key={b.id}>{b.icon}</span>
             ))}
           </Container>
         </AttentionSeeker>

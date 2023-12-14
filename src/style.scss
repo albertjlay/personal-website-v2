@@ -28,8 +28,8 @@ main {
     }
   }
 
-  img {
-    width: 270px;
+  svg {
+    width: 200px;
   }
 
   .call-to-action {
@@ -67,10 +67,11 @@ section {
   .about-body {
     background-color: #f3e5d4;
     padding: 0 10vw;
+
     .about-content {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-evenly;
       margin: 20px 0;
 
       .about-content-title {
@@ -103,8 +104,10 @@ section {
     }
     .badges {
       margin-top: 30px;
-      img {
-        width: 150px;
+      svg {
+        height: auto;
+        width: 10%;
+        margin: 0 2%;
       }
     }
   }
@@ -115,10 +118,10 @@ section {
     z-index: -1;
     position: relative;
     &.top-wave {
-      margin-bottom: -1vw;
+      margin-bottom: -5vw;
     }
     &.bottom-wave {
-      margin-top: -1vw;
+      margin-top: -8vw;
       background-color: #fbf9f9;
     }
   }
