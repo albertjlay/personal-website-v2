@@ -65,12 +65,13 @@ section {
 
 .about {
   .about-body {
-    background-color: #f0cfa8;
-    padding: 0 15vw;
+    background-color: #f3e5d4;
+    padding: 0 10vw;
     .about-content {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      margin: 20px 0;
 
       .about-content-title {
         width: 200px;
@@ -79,6 +80,7 @@ section {
           font-size: 1.5rem;
           font-weight: 300;
           position: relative;
+          top: -30px;
           .accent-text {
             font-size: 350%;
             color: white;
@@ -90,7 +92,6 @@ section {
               display: block;
               left: 0px;
               z-index: -1;
-              fill: rebeccapurple !important;
             }
           }
         }
@@ -126,8 +127,11 @@ section {
     .about-body {
       .about-content {
         flex-direction: column;
-        text-align: center;
         margin: 2em 0;
+        .about-content-text {
+          text-align: center;
+          width: auto;
+        }
       }
     }
   }
