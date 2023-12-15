@@ -44,7 +44,7 @@ const Projects = () => {
                     backgroundImage: `url(${item.img})`,
                     opacity: 0,
                     zIndex: 1,
-                    transition: 'opacity 300ms ease-in',
+                    transition: 'opacity 200ms ease-in',
                   },
                   '@media(max-width: 900px)': {
                     padding: '1em',

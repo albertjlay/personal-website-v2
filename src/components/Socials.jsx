@@ -18,7 +18,7 @@ const Socials = props => {
                 '&:hover, &:hover svg': {
                   backgroundColor: 'transparent',
                   color: '#5e8e44',
-                  transition: 'all 150ms linear',
+                  transition: 'all 200ms ease-in',
                 },
               }}
             >
