@@ -16,19 +16,14 @@ function addAlpha(color, opacity) {
 
 const Experience = () => {
   const [index, setIndex] = React.useState(0);
-  const [viewedExp, setViewedExp] = React.useState(experienceContent[0].name);
   const [viewedExpColor, setViewedExpColor] = React.useState(experienceContent[0].color);
 
-  const changeViewedExp = (event, newExp) => {
-    const index = experienceContent.findIndex(e => e.name === newExp);
+  const handleChangeExp = (_, index) => {
     setIndex(index);
-    setViewedExp(newExp);
     setViewedExpColor(experienceContent[index].color);
   };
-
-  const handleChangeIndex = index => {
+  const handleChangeExpSwipe = index => {
     setIndex(index);
-    setViewedExp(experienceContent[index].name);
     setViewedExpColor(experienceContent[index].color);
   };
   return (
@@ -51,10 +46,10 @@ const Experience = () => {
         <Typography variant='h2'>Where have I been?</Typography>
         <Typography variant='subtitle1'>Places I have had the joy to work with.</Typography>
         <Container className='experience-tabs'>
-          <TabContext value={viewedExp}>
+          <TabContext value={index}>
             <TabList
-              value={viewedExp}
-              onChange={changeViewedExp}
+              value={index}
+              onChange={handleChangeExp}
               className='experience-tab-list'
               scrollButtons={true}
               allowScrollButtonsMobile
@@ -66,9 +61,9 @@ const Experience = () => {
                 width: '100%',
               }}
             >
-              {experienceContent.map(ec => (
+              {experienceContent.map((ec, idx) => (
                 <Tab
-                  value={ec.name}
+                  value={idx}
                   key={ec.name}
                   label={ec.name}
                   sx={{
@@ -77,11 +72,11 @@ const Experience = () => {
                 />
               ))}
             </TabList>
-            <SwipeableViews axis={'x'} index={index} onChangeIndex={handleChangeIndex}>
+            <SwipeableViews axis={'x'} index={index} onChangeIndex={handleChangeExpSwipe}>
               {experienceContent.map((ec, idx) => (
                 <TabPanel
                   key={ec.name}
-                  value={ec.name}
+                  value={idx}
                   index={idx}
                   className='experience-tab'
                   sx={{
