@@ -62,8 +62,11 @@ const About = () => {
             </Slide>
           );
         })}
-        <Typography variant='subtitle1'>and my weapons of choice</Typography>
+
         <Fade triggerOnce>
+          <Typography variant='subtitle1' sx={{ marginTop: '20px' }}>
+            and my weapons of choice
+          </Typography>
           <Container className='badges'>
             {badgesContent.map(b => (
               <span key={b.id}>{b.icon}</span>

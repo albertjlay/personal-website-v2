@@ -73,7 +73,8 @@ section {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin: 20px 0;
+      padding: 20px 0;
+      border-bottom: #5e8e44 dashed 1px;
 
       .about-content-title {
         width: 200px;
@@ -135,14 +136,10 @@ section {
   @media (max-width: 900px) {
     .about-body {
       .about-content {
-        margin: 20px 0;
-        flex-direction: column;
+        display: block;
+        text-align: center;
         .about-content-title {
-          h3 {
-            &::before {
-              top: 0px;
-            }
-          }
+          display: inline-block;
         }
         .about-content-text {
           text-align: center;
