@@ -143,6 +143,9 @@ section {
           h3 {
             top: 0px;
           }
+          &::before {
+            top: 30%;
+          }
         }
         .about-content-text {
           text-align: center;
