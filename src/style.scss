@@ -93,7 +93,7 @@ section {
               position: absolute;
               display: block;
               left: 0px;
-              top: 47%;
+              top: 105px;
               z-index: -1;
             }
           }
@@ -135,10 +135,14 @@ section {
     .about-body {
       .about-content {
         flex-direction: column;
-        margin: 2em 0;
         .about-content-text {
           text-align: center;
           width: auto;
+        }
+      }
+      .badges {
+        svg {
+          width: 15%;
         }
       }
     }
