@@ -83,7 +83,7 @@ section {
           font-size: 1.5rem;
           font-weight: 300;
           position: relative;
-          top: -30px;
+          top: -1em;
           .accent-text {
             font-size: 350%;
             font-weight: 500;
@@ -140,9 +140,6 @@ section {
         text-align: center;
         .about-content-title {
           display: inline-block;
-          h3 {
-            top: 0px;
-          }
           &::before {
             top: 30%;
           }
