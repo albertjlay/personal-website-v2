@@ -34,7 +34,7 @@ export const aboutContent = [
         I make <span className='accent-text'>pretty</span> things.
       </>
     ),
-    body: 'Throughout my co-ops and personal projects, I have gained extensive experience developing intuitive and accessible user interfaces. Including this one! During my exchange term, I took a master’s-level Interaction Design course to gain a deeper understanding of user-centric design principles, honing my skills in creating seamless user experiences.',
+    body: 'Throughout my co-ops and personal projects, I have gained extensive experience developing intuitive and accessible user interfaces. Including this one! During my exchange term, I took a master’s-level Interaction Design course to gain a deeper understanding of user-centric design principles.',
   },
   {
     header: (
@@ -55,8 +55,7 @@ export const aboutContent = [
         >
           AWS Certified Solutions Architect
         </Link>{' '}
-        , equipping me with the knowledge to design scalable systems that goes beyond the AWS
-        environment.
+        , equipping me with the knowledge to design scalable systems.
       </>
     ),
   },
@@ -66,7 +65,7 @@ export const aboutContent = [
         I seek <span className='accent-text'>exciting</span> journeys.
       </>
     ),
-    body: 'While I love my work, I also make sure to live my life to the fullest. Simple things I enjoy: Scouring the city for good coffee, long chats with cool people, and trying not to embarrass myself dancing. Though the most thrilling experience so far was going on exchange to Sweden, where I was able to meet friends from around the world, immerse myself in the culture, and witness countless breathtaking sights!',
+    body: 'While I love my work, I also make sure to live my life to the fullest. Simple things I enjoy: Scouring the city for good coffee, long chats with cool people, and trying not to embarrass myself dancing. Though the most thrilling experience so far was going on exchange to Sweden!',
   },
 ];
 
