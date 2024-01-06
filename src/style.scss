@@ -85,6 +85,7 @@ section {
           top: -30px;
           .accent-text {
             font-size: 350%;
+            font-weight: 500;
             color: white;
 
             // brushstroke
@@ -134,7 +135,15 @@ section {
   @media (max-width: 900px) {
     .about-body {
       .about-content {
+        margin: 20px 0;
         flex-direction: column;
+        .about-content-title {
+          h3 {
+            &::before {
+              top: 0px;
+            }
+          }
+        }
         .about-content-text {
           text-align: center;
           width: auto;
