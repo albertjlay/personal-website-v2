@@ -140,6 +140,9 @@ section {
         text-align: center;
         .about-content-title {
           display: inline-block;
+          h3 {
+            top: 0px;
+          }
           &::before {
             top: 30%;
           }
