@@ -1,7 +1,4 @@
 import React from 'react';
-import laptopMemoji from './assets/memojis/laptop.webp';
-import shrugMemoji from './assets/memojis/shrug.webp';
-import partyMemoji from './assets/memojis/party.webp';
 import topHatLogo from './assets/experiences/top-hat.webp';
 import searchspringLogo from './assets/experiences/searchspring.svg';
 import imagineLogo from './assets/experiences/imagine-communications.webp';
@@ -38,8 +35,6 @@ export const aboutContent = [
       </>
     ),
     body: 'Throughout my co-ops and personal projects, I have gained extensive experience developing intuitive and accessible user interfaces. Including this one! During my exchange term, I took a master’s-level Interaction Design course to gain a deeper understanding of user-centric design principles, honing my skills in creating seamless user experiences.',
-    image: laptopMemoji,
-    alt: 'Memoji of me working on my laptop.',
   },
   {
     header: (
@@ -64,8 +59,6 @@ export const aboutContent = [
         environment.
       </>
     ),
-    image: partyMemoji,
-    alt: 'Memoji of me partying.',
   },
   {
     header: (
@@ -74,8 +67,6 @@ export const aboutContent = [
       </>
     ),
     body: 'While I love my work, I also make sure to live my life to the fullest. Simple things I enjoy: Scouring the city for good coffee, long chats with cool people, and trying not to embarrass myself dancing. Though the most thrilling experience so far was going on exchange to Sweden, where I was able to meet friends from around the world, immerse myself in the culture, and witness countless breathtaking sights!',
-    image: shrugMemoji,
-    alt: 'Memoji of me shrugging.',
   },
 ];
 

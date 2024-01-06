@@ -1,9 +1,8 @@
 import React from 'react';
 import { Typography } from '@mui/material';
-import HiMemoji from '../../assets/memojis/hi.webp';
 import PillButton from '../PillButton';
 import { emailInfo, overviewContent, resumeInfo } from '../../content';
-import { AttentionSeeker, Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 import Lottie from 'lottie-react';
 import bubbleTeaPanda from '../../assets/lotties/bubble-tea-panda.json';
 
