@@ -73,8 +73,8 @@ section {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding: 20px 0;
-      border-bottom: #5e8e44 dashed 1px;
+      padding: 30px 0;
+      border-bottom: #e08b76 dashed 1px;
 
       .about-content-title {
         width: 200px;
@@ -83,22 +83,12 @@ section {
           font-size: 1.5rem;
           font-weight: 300;
           position: relative;
-          top: -1em;
+
           .accent-text {
             font-size: 350%;
             font-weight: 500;
-            color: white;
+            color: #5e8e44;
             position: relative;
-
-            // brushstroke
-            &::before {
-              content: url('./assets/brushstroke.svg');
-              position: absolute;
-              display: block;
-              // left: 0px;
-              top: 53%;
-              z-index: -1;
-            }
           }
         }
       }
@@ -143,11 +133,6 @@ section {
           display: inline-block;
           h3 {
             top: 0px;
-            .accent-text {
-              &::before {
-                // top: 28%;
-              }
-            }
           }
         }
         .about-content-text {
