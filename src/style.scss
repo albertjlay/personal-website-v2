@@ -88,14 +88,15 @@ section {
             font-size: 350%;
             font-weight: 500;
             color: white;
+            position: relative;
 
             // brushstroke
             &::before {
               content: url('./assets/brushstroke.svg');
               position: absolute;
               display: block;
-              left: 0px;
-              top: 1.3em;
+              // left: 0px;
+              top: 53%;
               z-index: -1;
             }
           }
