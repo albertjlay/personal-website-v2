@@ -142,9 +142,11 @@ section {
           display: inline-block;
           h3 {
             top: 0px;
-          }
-          &::before {
-            top: 0px;
+            .accent-text {
+              &::before {
+                top: 30%;
+              }
+            }
           }
         }
         .about-content-text {
