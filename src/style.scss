@@ -102,6 +102,8 @@ section {
     }
     .badges {
       margin-top: 30px;
+      position: relative;
+      z-index: 10;
       svg {
         height: auto;
         width: 10%;
