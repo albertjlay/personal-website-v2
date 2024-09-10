@@ -92,7 +92,13 @@ const Experience = () => {
                         {ec.role}{' '}
                         <span className='accent-text' style={{ color: ec.color, fontWeight: 500 }}>
                           @ <br />
-                          <Link href={ec.url} underline='hover' color={ec.color}>
+                          <Link
+                            href={ec.url}
+                            underline='hover'
+                            color={ec.color}
+                            target='_blank'
+                            rel='noreferrer'
+                          >
                             {ec.name}
                           </Link>
                         </span>

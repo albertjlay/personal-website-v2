@@ -5,7 +5,7 @@ import Socials from '../Socials';
 const Footer = () => {
   return (
     <footer>
-      <Typography variant='body1'>&copy; 2022 Albert Lay</Typography>
+      <Typography variant='body1'>&copy; 2022 - 2024 Albert Lay</Typography>
       <Socials />
     </footer>
   );

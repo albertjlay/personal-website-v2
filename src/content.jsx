@@ -1,6 +1,7 @@
 import React from 'react';
 import topHatLogo from './assets/experiences/top-hat.webp';
 import searchspringLogo from './assets/experiences/searchspring.svg';
+import titanLogo from './assets/experiences/titan.svg';
 import imagineLogo from './assets/experiences/imagine-communications.webp';
 import covidWatchdogImage from './assets/projects/covid-watchdog.webp';
 import nggImage from './assets/projects/ngg.webp';
@@ -18,12 +19,12 @@ import { Link } from '@mui/material';
 
 export const overviewContent = (
   <>
-    I'm a software developer with a year of co-op experience and a fourth-year student at the
-    University of Waterloo. Currently based in New York and working in{' '}
+    I’m a fourth-year Computer Science student at the University of Waterloo with four internships
+    under my belt, including my most recent one at{' '}
     <Link href='https://www.titan.com/' underline='hover' target='_blank' rel='noreferrer'>
       Titan
     </Link>{' '}
-    as a software engineer intern.
+    . I am currently seeking a final internship opportunity for Winter 2025 (January to April)!
   </>
 );
 
@@ -44,9 +45,9 @@ export const aboutContent = [
     ),
     body: (
       <>
-        I have hands-on experience across the entire software development lifecycle, encompassing
-        tasks ranging from formulating requirements and constructing RESTful APIs to deploying code.
-        I am also an{' '}
+        I have hands-on experience across the entire software development lifecycle, including
+        designing a MongoDB schema, constructing GraphQL resolvers, and optimizing the deployment
+        pipeline. I am also an{' '}
         <Link
           href='https://www.credly.com/badges/76b1bd0a-8050-47b6-a8e6-6fb08409b478/public_url'
           underline='hover'
@@ -232,6 +233,29 @@ export const badgesContent = [
 
 export const experienceContent = [
   {
+    name: 'Titan',
+    role: 'Software Engineer',
+    url: 'https://www.titan.com/',
+    logo: titanLogo,
+    location: 'New York',
+    startDate: new Date(2024, 0),
+    endDate: new Date(2024, 7),
+    tools: ['React Native', 'Node.js', 'MongoDB', 'GraphQL', 'LangChain'],
+    body: [
+      'Led the Smart ACATS project, managing $4M incoming assets per month. Designed the MongoDB schema, built GraphQL resolvers, and utilized Plaid API to gain holdings data.',
+      'Developed a 90%-accurate account statement parser using LangChain and OpenAI API, employing few-shot prompting, chunking, and recursive validations.',
+      'Overhauled the onboarding flow in four weeks, modernizing authentication, application, and admin membership tools by leveraging React Navigation 6.0 and Reanimated for a sleek user experience.',
+      'Created four highly effective animated GTM banners resulting in a 400% increase in call volume, driving total deposits of $3 million per month — a $1 million increase from the previous month.',
+      'Spearheaded the development of an interactive chart on iOS, Android, and the marketing website, providing historical performance for investors, while ensuring full compliance with SEC regulations.',
+    ],
+    quote:
+      "Albert has been an exceptional contributor to our team since day one. He's consistently delivered high-quality projects on impressive timelines, and has been very proactive about asking for more complex projects to lead and own. Every engineer who has worked with Albert has sung his praises, and he's been such a bright and uplifting member of the team during his short time here.",
+    quoteWriterName: 'Jean Kim',
+    quoteWriterPosition: 'Senior Engineering Manager',
+    color: '#ff9900',
+    emojiClass: 'tennis',
+  },
+  {
     name: 'Top Hat',
     role: 'Software Developer',
     url: 'https://tophat.com/',
@@ -241,10 +265,9 @@ export const experienceContent = [
     endDate: new Date(2023, 3),
     tools: ['React', 'ProseMirror', 'Django', 'QuickSight', 'Datadog'],
     body: [
-      'Developed features for a WCAG-compliant WYSIWYG question editor and renderer using React, Tiptap, and Prosemirror for 1M+ post-secondary students & instructors across North America.',
+      'Developed features for a WCAG-compliant WYSIWYG question editor and renderer using React, Tiptap, and ProseMirror for 1M+ users. Including custom-positioned floating disclosures, RegEx-based numeric response validators, and a custom React hook to reset question states.',
       'Created an optimized endpoint in Django to bulk fetch student responses, consolidating multiple API requests from the frontend and reducing page load time.',
-      'Collaborated actively to refine agile team processes, shrinking cycle time by 4 days for each ticket.',
-      'Outlined application observability strategies to capture critical metrics in Datadog and QuickSight.',
+      'Collaborated with stakeholders to formulate 14 observability tickets. Implemented solutions in AWS QuickSight and DataDog, enabling data-driven decision-making and proactive monitoring.',
       'Updated client-side & server-side validation logic with Pydantic to enhance application reliability.',
     ],
     quote:
