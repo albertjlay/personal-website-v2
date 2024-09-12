@@ -9,7 +9,7 @@ import { Fade } from 'react-awesome-reveal';
 const CallToAction = () => {
   return (
     <section className='call-to-action'>
-      <Lottie className='lottie' animationData={pandaLottie} loop={true} />;
+      <Lottie className='lottie' animationData={pandaLottie} loop={true} />
       <Fade triggerOnce>
         <div>
           <Typography variant='h2'>That's it from me folks!</Typography>
