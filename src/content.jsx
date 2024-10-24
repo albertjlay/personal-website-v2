@@ -19,12 +19,17 @@ import { Link } from '@mui/material';
 
 export const overviewContent = (
   <>
-    I’m a fourth-year Computer Science student at the University of Waterloo with four internships
-    under my belt, including my most recent one at{' '}
+    I'm a senior Computer Science student at the University of Waterloo. I'll be joining{' '}
+    <Link href='https://www.stackadapt.com/' underline='hover' target='_blank' rel='noreferrer'>
+      StackAdapt
+    </Link>{' '}
+    as an upcoming Winter intern, after previously interning at{' '}
     <Link href='https://www.titan.com/' underline='hover' target='_blank' rel='noreferrer'>
       Titan
-    </Link>{' '}
-    . I am currently seeking a final internship opportunity for Winter 2025 (January to April)!
+    </Link>
+    .
+    <br /> <br />
+    Actively seeking new grad roles starting in September 2025. Let's work together!
   </>
 );
 
