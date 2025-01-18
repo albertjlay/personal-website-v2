@@ -19,13 +19,10 @@ import { Link } from '@mui/material';
 
 export const overviewContent = (
   <>
-    I'm a senior Computer Science student at the University of Waterloo. I'll be joining{' '}
+    I'm a senior Computer Science student at the University of Waterloo and a current Software
+    Engineer Intern at{' '}
     <Link href='https://www.stackadapt.com/' underline='hover' target='_blank' rel='noreferrer'>
       StackAdapt
-    </Link>{' '}
-    as an upcoming Winter intern, after previously interning at{' '}
-    <Link href='https://www.titan.com/' underline='hover' target='_blank' rel='noreferrer'>
-      Titan
     </Link>
     .
     <br /> <br />
@@ -127,46 +124,19 @@ export const badgesContent = [
     ),
   },
   {
-    id: 'cplusplus',
+    id: 'rubyonrails',
     icon: (
       <svg
         width='800px'
         height='800px'
-        viewBox='-16 0 288 288'
+        viewBox='0 -166 512 512'
         version='1.1'
         xmlns='http://www.w3.org/2000/svg'
         preserveAspectRatio='xMidYMid'
       >
-        <title>C Plus Plus Logo</title>
-        <g>
-          <path
-            d='M255.569,84.72 C255.567,79.89 254.534,75.622 252.445,71.959 C250.393,68.357 247.32,65.338 243.198,62.951 C209.173,43.332 175.115,23.773 141.101,4.134 C131.931,-1.16 123.04,-0.967 113.938,4.403 C100.395,12.39 32.59,51.237 12.385,62.94 C4.064,67.757 0.015,75.129 0.013,84.711 C0,124.166 0.013,163.62 0,203.076 C0.002,207.8 0.991,211.985 2.988,215.593 C5.041,219.304 8.157,222.406 12.374,224.847 C32.58,236.55 100.394,275.394 113.934,283.383 C123.04,288.756 131.931,288.948 141.104,283.652 C175.119,264.012 209.179,244.454 243.209,224.835 C247.426,222.395 250.542,219.291 252.595,215.583 C254.589,211.975 255.58,207.79 255.582,203.065 C255.582,203.065 255.582,124.176 255.569,84.72'
-            fill='#5C8DBC'
-          ></path>
-          <path
-            d='M128.182,143.509 L2.988,215.593 C5.041,219.304 8.157,222.406 12.374,224.847 C32.58,236.55 100.394,275.394 113.934,283.383 C123.04,288.756 131.931,288.948 141.104,283.652 C175.119,264.012 209.179,244.454 243.209,224.835 C247.426,222.395 250.542,219.291 252.595,215.583 L128.182,143.509'
-            fill='#1A4674'
-          ></path>
-          <path
-            d='M91.101,164.861 C98.386,177.579 112.081,186.157 127.791,186.157 C143.598,186.157 157.371,177.47 164.619,164.616 L128.182,143.509 L91.101,164.861'
-            fill='#1A4674'
-          ></path>
-          <path
-            d='M255.569,84.72 C255.567,79.89 254.534,75.622 252.445,71.959 L128.182,143.509 L252.595,215.583 C254.589,211.975 255.58,207.79 255.582,203.065 C255.582,203.065 255.582,124.176 255.569,84.72'
-            fill='#1B598E'
-          ></path>
-          <path
-            d='M248.728,148.661 L239.006,148.661 L239.006,158.385 L229.282,158.385 L229.282,148.661 L219.561,148.661 L219.561,138.94 L229.282,138.94 L229.282,129.218 L239.006,129.218 L239.006,138.94 L248.728,138.94 L248.728,148.661'
-            fill='#FFFFFF'
-          ></path>
-          <path
-            d='M213.253,148.661 L203.532,148.661 L203.532,158.385 L193.81,158.385 L193.81,148.661 L184.088,148.661 L184.088,138.94 L193.81,138.94 L193.81,129.218 L203.532,129.218 L203.532,138.94 L213.253,138.94 L213.253,148.661'
-            fill='#FFFFFF'
-          ></path>
-          <path
-            d='M164.619,164.616 C157.371,177.47 143.598,186.157 127.791,186.157 C112.081,186.157 98.386,177.579 91.101,164.861 C87.562,158.681 85.527,151.526 85.527,143.893 C85.527,120.552 104.45,101.63 127.791,101.63 C143.4,101.63 157.023,110.101 164.344,122.689 L201.285,101.417 C186.602,76.071 159.189,59.019 127.791,59.019 C80.915,59.019 42.916,97.019 42.916,143.893 C42.916,159.271 47.007,173.692 54.157,186.131 C68.803,211.611 96.294,228.768 127.791,228.768 C159.346,228.768 186.88,211.542 201.505,185.987 L164.619,164.616'
-            fill='#FFFFFF'
-          ></path>
+        <g fill='#CC0000'>
+          <path d='M219.115365,150.633753 C219.115365,150.633753 241.684635,148.699244 241.684635,119.552645 C241.684635,90.4060453 214.343577,87.697733 214.343577,87.697733 L165.078086,87.697733 L165.078086,179.651385 L189.839798,179.651385 L189.839798,157.469018 L211.248363,179.651385 L247.875063,179.651385 L219.115365,150.633753 Z M209.571788,131.804534 L189.839798,131.804534 L189.839798,110.782872 L209.700756,110.782872 C209.700756,110.782872 215.246348,112.846348 215.246348,121.229219 C215.246348,129.612091 209.571788,131.804534 209.571788,131.804534 Z M302.815113,88.3425693 L277.666499,88.3425693 C259.74005,88.3425693 253.678589,104.592443 253.678589,112.330479 L253.678589,179.651385 L278.827204,179.651385 L278.827204,163.530479 L302.428212,163.530479 L302.428212,179.651385 L326.803023,179.651385 L326.803023,112.330479 C326.803023,92.7274559 309.005542,88.3425693 302.815113,88.3425693 Z M302.428212,137.479093 L278.698237,137.479093 L278.698237,115.167758 C278.698237,115.167758 278.698237,110.138035 286.565239,110.138035 L295.206045,110.138035 C302.170277,110.138035 302.299244,115.167758 302.299244,115.167758 L302.299244,137.479093 L302.428212,137.479093 Z M338.281108,88.3425693 L364.461461,88.3425693 L364.461461,179.651385 L338.281108,179.651385 L338.281108,88.3425693 Z M401.217128,156.050378 L401.217128,88.3425693 L375.165743,88.3425693 L375.165743,156.050378 L375.165743,179.651385 L401.217128,179.651385 L436.425189,179.651385 L436.425189,156.050378 L401.217128,156.050378 Z M445.065995,156.308312 L445.065995,179.651385 L487.238287,179.651385 C495.879093,179.651385 510.710327,173.33199 511.226196,155.663476 L511.226196,146.635768 C511.226196,131.546599 498.84534,122.647859 487.238287,122.647859 L466.216625,122.647859 L466.216625,111.81461 L507.873048,111.81461 L507.873048,88.3425693 L467.893199,88.3425693 C457.575819,88.3425693 443.776322,96.8544081 443.776322,112.71738 L443.776322,120.842317 C443.776322,136.70529 457.446851,144.830227 467.893199,144.830227 C496.910831,144.959194 460.928967,144.830227 487.754156,144.830227 L487.754156,156.179345 L445.065995,156.308312 Z'></path>
+          <path d='M9.02770781,179.522418 L110.911839,179.522418 C110.911839,179.522418 91.4377834,90.6639798 155.921411,54.6821159 C169.978841,47.8468514 214.730479,22.311335 287.983879,76.4775819 C290.30529,74.543073 292.497733,72.995466 292.497733,72.995466 C292.497733,72.995466 225.434761,6.06146096 150.76272,13.5415617 C113.233249,16.8947103 67.0629723,51.0710327 39.9798489,96.2095718 C12.8967254,141.348111 9.02770781,179.522418 9.02770781,179.522418 Z M221.307809,20.763728 L221.823678,12.1229219 C220.662972,11.4780856 217.438791,9.93047859 209.313854,7.60906801 L208.797985,16.1209068 C213.053904,17.5395466 217.180856,19.0871537 221.307809,20.763728 Z M209.055919,48.1047859 L208.54005,56.2297229 C212.79597,56.3586902 217.051889,56.8745592 221.307809,57.77733 L221.823678,49.7813602 C217.438791,48.8785894 213.182872,48.3627204 209.055919,48.1047859 Z M161.338035,7.86700252 L162.627708,7.86700252 L160.048363,-7.10542736e-15 C156.050378,-7.10542736e-15 151.923426,0.257934509 147.667506,0.773803526 L150.117884,8.38287154 C153.857935,7.99596977 157.597985,7.86700252 161.338035,7.86700252 Z M167.528463,55.3269521 L170.49471,64.2256927 C174.234761,62.4201511 177.974811,60.8725441 181.714861,59.7118388 L178.877582,51.2 C174.492695,52.4896725 170.752645,53.9083123 167.528463,55.3269521 Z M108.97733,21.4085642 L103.173804,12.5098237 C99.9496222,14.186398 96.5964736,15.9919395 93.1143577,18.0554156 L99.0468514,27.0831234 C102.4,25.0196474 105.624181,23.0851385 108.97733,21.4085642 Z M135.415617,79.4438287 L141.606045,88.729471 C143.798489,85.5052897 146.377834,82.5390428 149.215113,79.572796 L143.411587,70.8030227 C140.44534,73.511335 137.737028,76.4775819 135.415617,79.4438287 Z M116.715365,120.971285 L127.161713,129.225189 C127.677582,124.195466 128.580353,119.165743 129.870025,114.13602 L120.584383,106.784887 C118.907809,111.556675 117.747103,116.328463 116.715365,120.971285 Z M60.2277078,59.7118388 L51.0710327,51.715869 C47.7178841,54.9400504 44.4937028,58.1642317 41.5274559,61.3884131 L51.4579345,69.9002519 C54.1662469,66.418136 57.1324937,62.9360202 60.2277078,59.7118388 Z M21.279597,117.360202 L6.44836272,111.943577 C3.99798489,117.489169 1.28967254,123.937531 0,127.419647 L14.8312343,132.836272 C16.5078086,128.451385 19.2161209,122.13199 21.279597,117.360202 Z M114.780856,153.728967 C115.038791,160.564232 115.683627,166.109824 116.328463,169.978841 L131.804534,175.524433 C130.643829,170.49471 129.483123,164.820151 128.70932,158.75869 L114.780856,153.728967 Z'></path>
         </g>
       </svg>
     ),
@@ -239,7 +209,7 @@ export const badgesContent = [
 export const experienceContent = [
   {
     name: 'Titan',
-    role: 'Software Engineer',
+    role: 'Software Engineer Intern',
     url: 'https://www.titan.com/',
     logo: titanLogo,
     location: 'New York',
@@ -247,11 +217,11 @@ export const experienceContent = [
     endDate: new Date(2024, 7),
     tools: ['React Native', 'Node.js', 'MongoDB', 'GraphQL', 'LangChain'],
     body: [
-      'Led the Smart ACATS project, managing $4M incoming assets per month. Designed the MongoDB schema, built GraphQL resolvers, and utilized Plaid API to gain holdings data.',
-      'Developed a 90%-accurate account statement parser using LangChain and OpenAI API, employing few-shot prompting, chunking, and recursive validations.',
-      'Overhauled the onboarding flow in four weeks, modernizing authentication, application, and admin membership tools by leveraging React Navigation 6.0 and Reanimated for a sleek user experience.',
-      'Created four highly effective animated GTM banners resulting in a 400% increase in call volume, driving total deposits of $3 million per month — a $1 million increase from the previous month.',
-      'Spearheaded the development of an interactive chart on iOS, Android, and the marketing website, providing historical performance for investors, while ensuring full compliance with SEC regulations.',
+      'Led the External Account Transfer project which manages $4 million incoming assets per month using MongoDB, GraphQL, React Native, and Plaid API',
+      'Prototyped an account statement parser using LangChain and OpenAI API, employing prompt engineering techniques to achieve 90% accuracy.',
+      'Created CTA banners which increased concierge calls by 400% and monthly deposits by $1 million.',
+      'Overhauled the OAuth 2.0 authentication and onboarding flow to support company rebrand.',
+      'Built an interactive historical performance chart in React to comply with new SEC regulations.',
     ],
     quote:
       "Albert has been an exceptional contributor to our team since day one. He's consistently delivered high-quality projects on impressive timelines, and has been very proactive about asking for more complex projects to lead and own. Every engineer who has worked with Albert has sung his praises, and he's been such a bright and uplifting member of the team during his short time here.",
@@ -262,7 +232,7 @@ export const experienceContent = [
   },
   {
     name: 'Top Hat',
-    role: 'Software Developer',
+    role: 'Software Engineer Intern',
     url: 'https://tophat.com/',
     logo: topHatLogo,
     location: 'Toronto',
@@ -270,10 +240,8 @@ export const experienceContent = [
     endDate: new Date(2023, 3),
     tools: ['React', 'ProseMirror', 'Django', 'QuickSight', 'Datadog'],
     body: [
-      'Developed features for a WCAG-compliant WYSIWYG question editor and renderer using React, Tiptap, and ProseMirror for 1M+ users. Including custom-positioned floating disclosures, RegEx-based numeric response validators, and a custom React hook to reset question states.',
-      'Created an optimized endpoint in Django to bulk fetch student responses, consolidating multiple API requests from the frontend and reducing page load time.',
-      'Collaborated with stakeholders to formulate 14 observability tickets. Implemented solutions in AWS QuickSight and DataDog, enabling data-driven decision-making and proactive monitoring.',
-      'Updated client-side & server-side validation logic with Pydantic to enhance application reliability.',
+      'Built key features with React, Django, and Prosemirror to launch the new Questions platform, empowering 1M+ users to create, assign, and answer course questions. ',
+      'Coordinated with stakeholders to identify KPIs and submitted an RFC proposing strategies to implement 14 dashboards in AWS QuickSight and DataDog.',
     ],
     quote:
       'Albert did a fantastic job as a co-op, he was well beyond expectations. He even got recognized among the leadership team during one of the delivery review meetings where, just through his own efforts, he brought down the cycle time by 4 days.',
@@ -284,7 +252,7 @@ export const experienceContent = [
   },
   {
     name: 'Searchspring',
-    role: 'Software Developer',
+    role: 'Software Engineer Intern',
     url: 'https://searchspring.com/',
     logo: searchspringLogo,
     location: 'Toronto',
@@ -293,7 +261,7 @@ export const experienceContent = [
     tools: ['Go', 'Vue', 'GCP', 'Docker', 'Kubernetes'],
     body: [
       "Modernized the development environment's Docker images to compile for ARM architectures and reduced size by 6.58 GB using multi-stage builds & smaller Linux base images.",
-      'Reengineered a core feature from a monolithic PHP backend into a modern Go microservice to tackle technical debt, increase test coverage, and improve code readability.',
+      'Refactored a core feature from a monolithic PHP backend into modern Golang microservices, enhancing scalability, maintainability, and decreasing API response time by 20%.',
       "Consolidated the internal Slack bot's various test commands into one, which increased available company-wide Slack API slash command capacity by 36%.",
       'Migrated 10+ Rundeck jobs into Argo Workflows for a stronger integration with Kubernetes.',
       'Developed features for an internal task management tool using Asana API, Vue, and TypeScript.',
@@ -307,7 +275,7 @@ export const experienceContent = [
   },
   {
     name: 'Imagine Communications',
-    role: 'Full Stack Web Developer',
+    role: 'Software Engineer Intern',
     url: 'https://imaginecommunications.com/',
     logo: imagineLogo,
     location: 'Remote - Waterloo',
@@ -315,9 +283,8 @@ export const experienceContent = [
     endDate: new Date(2022, 3),
     tools: ['C#', 'TypeScript', '.NET', 'Vue', 'PostgreSQL'],
     body: [
-      'Redesigned a data model in the backend to accept user-defined tags while maintaining backward compatibility with previous JSON configurations using C#, .NET, and PostgreSQL.',
-      'Created a new thread that emits RabbitMQ messages to handle configuration changes concurrently.',
-      "Implemented default configurations in Vue, TypeScript, and C# that mirror legacy behaviours to minimize disruptions to customers' workflows when upgrading to the new GA.",
+      'Reduced API response time by 60% by transforming blocking processes into asynchronous, event-driven procedures using RabbitMQ, C#, and .NET.',
+      'Developed support for user-customizable, backward-compatible tags using C# and PostgreSQL.',
     ],
     quote:
       "Albert has been an integral member of the team this term. His work on a number of time sensitive and critical tasks have been both instrumental to the success of the team's goals, and reflect a level of work closer to that of a full-time, rather than just a co-op. With his driven and positive attitude, coupled with his eagerness to learn, Albert was a pleasure to work with this term. Great work!",
@@ -400,7 +367,7 @@ export const projectContent = [
 
 export const resumeInfo = {
   name: 'Resume',
-  url: 'https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/resume-albert-lay.pdf',
+  url: 'https://albertlaypersonalwebsite.s3.ca-central-1.amazonaws.com/albert-lay-resume.pdf',
 };
 export const emailInfo = {
   name: 'Email',
