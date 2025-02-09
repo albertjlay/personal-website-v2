@@ -20,9 +20,6 @@ const Home = () => {
           </Typography>
           <div className='call-to-action'>
             <PillButton href={emailInfo.url}>say hi!</PillButton>
-            <a href={resumeInfo.url} target='_blank' rel='noreferrer'>
-              <PillButton>resume</PillButton>
-            </a>
           </div>
         </div>
         <Lottie animationData={bubbleTeaPanda} loop={true} style={{ width: '350px' }} />;

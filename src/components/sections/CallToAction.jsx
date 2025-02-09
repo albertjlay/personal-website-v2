@@ -21,9 +21,6 @@ const CallToAction = () => {
             <PillButton bordercolor='white' href={emailInfo.url}>
               email
             </PillButton>
-            <a href={resumeInfo.url} target='_blank' rel='noreferrer'>
-              <PillButton bordercolor='white'>resume</PillButton>
-            </a>
           </div>
         </div>
       </Fade>

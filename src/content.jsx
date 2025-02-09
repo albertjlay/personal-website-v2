@@ -386,4 +386,4 @@ export const linkedinInfo = {
   icon: LinkedInIcon,
 };
 
-export const socialContent = [resumeInfo, emailInfo, githubInfo, linkedinInfo];
+export const socialContent = [emailInfo, githubInfo, linkedinInfo];
