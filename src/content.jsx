@@ -218,11 +218,11 @@ export const experienceContent = [
     endDate: new Date(2024, 7),
     tools: ['React Native', 'Node.js', 'MongoDB', 'GraphQL', 'LangChain'],
     body: [
-      'Led the External Account Transfer project which manages $4 million incoming assets per month using MongoDB, GraphQL, React Native, and Plaid API',
+      'Built an end-to-end system for clients to transfer external assets, driving $4M in monthly transactions, by using React Native, Node.js, MongoDB, and GraphQL.',
+      'Developed an interactive historical performance chart in React to comply with new SEC regulations and allow users to benchmark Titan’s funds against standard ETFs.',
+      'Increased monthly deposits by $1M and advisor calls by 400% by streamlining scheduling flows using Calendly and React Native Reanimated.',
       'Prototyped an account statement parser using LangChain and OpenAI API, employing prompt engineering techniques to achieve 90% accuracy.',
-      'Created CTA banners which increased concierge calls by 400% and monthly deposits by $1 million.',
       'Overhauled the OAuth 2.0 authentication and onboarding flow to support company rebrand.',
-      'Built an interactive historical performance chart in React to comply with new SEC regulations.',
     ],
     quote:
       "Albert has been an exceptional contributor to our team since day one. He's consistently delivered high-quality projects on impressive timelines, and has been very proactive about asking for more complex projects to lead and own. Every engineer who has worked with Albert has sung his praises, and he's been such a bright and uplifting member of the team during his short time here.",
@@ -241,8 +241,8 @@ export const experienceContent = [
     endDate: new Date(2023, 3),
     tools: ['React', 'ProseMirror', 'Django', 'QuickSight', 'Datadog'],
     body: [
-      'Built key features with React, Django, and Prosemirror to launch the new Questions platform, empowering 1M+ users to create, assign, and answer course questions. ',
-      'Coordinated with stakeholders to identify KPIs and submitted an RFC proposing strategies to implement 14 dashboards in AWS QuickSight and DataDog.',
+      'Built key features with React, Django, and Prosemirror to launch the new Questions platform, empowering 1M+ users to create, assign, and answer course questions.',
+      'Authored an approved RFC outlining backend changes and new events required to implement 14 dashboards in AWS QuickSight and Datadog, to support data-driven decisions.',
     ],
     quote:
       'Albert did a fantastic job as a co-op, he was well beyond expectations. He even got recognized among the leadership team during one of the delivery review meetings where, just through his own efforts, he brought down the cycle time by 4 days.',
@@ -261,8 +261,8 @@ export const experienceContent = [
     endDate: new Date(2022, 7),
     tools: ['Go', 'Vue', 'GCP', 'Docker', 'Kubernetes'],
     body: [
-      "Modernized the development environment's Docker images to compile for ARM architectures and reduced size by 6.58 GB using multi-stage builds & smaller Linux base images.",
-      'Refactored a core feature from a monolithic PHP backend into modern Golang microservices, enhancing scalability, maintainability, and decreasing API response time by 20%.',
+      'Achieved a 15% reduction in Docker image sizes, faster build times, and multi-architecture support by revamping Dockerfiles across 17 microservices.',
+      'Refactored a core feature from a monolithic PHP backend into modern Golang microservices, decreasing API response time by 20% and enhancing scalability.',
       "Consolidated the internal Slack bot's various test commands into one, which increased available company-wide Slack API slash command capacity by 36%.",
       'Migrated 10+ Rundeck jobs into Argo Workflows for a stronger integration with Kubernetes.',
       'Developed features for an internal task management tool using Asana API, Vue, and TypeScript.',
@@ -284,8 +284,8 @@ export const experienceContent = [
     endDate: new Date(2022, 3),
     tools: ['C#', 'TypeScript', '.NET', 'Vue', 'PostgreSQL'],
     body: [
+      'Implemented custom tags using C#, .NET, and PostgreSQL, enabling users to create automated workflows for content scheduling.',
       'Reduced API response time by 60% by transforming blocking processes into asynchronous, event-driven procedures using RabbitMQ, C#, and .NET.',
-      'Developed support for user-customizable, backward-compatible tags using C# and PostgreSQL.',
     ],
     quote:
       "Albert has been an integral member of the team this term. His work on a number of time sensitive and critical tasks have been both instrumental to the success of the team's goals, and reflect a level of work closer to that of a full-time, rather than just a co-op. With his driven and positive attitude, coupled with his eagerness to learn, Albert was a pleasure to work with this term. Great work!",
