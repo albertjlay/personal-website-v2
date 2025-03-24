@@ -25,8 +25,6 @@ export const overviewContent = (
       StackAdapt
     </Link>
     .
-    <br /> <br />
-    Actively seeking new grad roles starting in September 2025. Let's work together!
   </>
 );
 
